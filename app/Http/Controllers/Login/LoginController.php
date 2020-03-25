@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Login;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use qrcode;
+use QRcode;
 class LoginController extends Controller
 {
     //
