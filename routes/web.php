@@ -15,4 +15,4 @@
 //    return view('welcome');
 //});
 
-Route('/','Login\LoginController@login');
+Route::get('/','Login\LoginController@login');
