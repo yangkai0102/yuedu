@@ -44,8 +44,8 @@ class LoginController extends Controller
         $url='http://yuedu.1548580932.top/oauth?uid='.$uid;
 
         $obj= new \QRcode();
-        $obj->png($url,'/qrcode.png');
-        $QR = '/qrcode.png'; //已经生成的原始二维码图
+        $obj->png($url,public_path('/qrcode.png'));
+        $QR = public_path('/qrcode.png'); //已经生成的原始二维码图
         echo '<img src="'.$QR.'">';die;
         return redirect('login/qrcode');
     }
