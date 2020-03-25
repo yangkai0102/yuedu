@@ -42,7 +42,7 @@ class LoginController extends Controller
     public function code(){
         $uid=uniqid();
         $url='http://yuedu.1548580932.top/oauth?uid='.$uid;
-        $a=storage_path("/app/public/phpqrcode");
+        $a=storage_path("app/public/phpqrcode.php");
         include "$a";
         $obj= new QRcode();
         $b=$obj->png($url,'/1.png');
