@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Login;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use QRcode;
+use qrcode;
 class LoginController extends Controller
 {
     //
@@ -42,10 +42,9 @@ class LoginController extends Controller
     public function code(){
         $uid=uniqid();
         $url='http://yuedu.1548580932.top/oauth?uid='.$uid;
-        $a=storage_path("phpqrcode.php");
 
         $obj= new QRcode();
-        $obj->png($url,'/1.png');
+        $b=$obj->png($url,'/1.png');
 
         return redirect('login/qrcode',['img'=>$b]);
     }

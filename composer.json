@@ -36,7 +36,8 @@
         },
         "classmap": [
             "database/seeds",
-            "database/factories"
+            "database/factories",
+            "app/Lib/phpqrcode.php"
         ]
     },
     "autoload-dev": {
