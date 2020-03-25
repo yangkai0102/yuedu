@@ -30,7 +30,7 @@
         <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
         <hr class="hr15">
         <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
-        <center><a href="">扫码登录</a></center>
+        <center><a href="{{url('login/code')}}">扫码登录</a></center>
         <hr class="hr20" >
     </form>
 </div>

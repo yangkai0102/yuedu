@@ -16,3 +16,13 @@
 //});
 
 Route::get('/','Login\LoginController@login');
+
+Route::get('/login/code','Login\LoginController@code');
+
+Route::get('/index','Login\LoginController@index');
+
+Route::get('/oauth','Login\LoginController@oauth');
+Route::get('/login2','Login\LoginController@login2');
+
+
+
