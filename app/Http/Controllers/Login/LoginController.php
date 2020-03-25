@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Login;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use QRcode;
+use phpqrcode;
 class LoginController extends Controller
 {
     //
@@ -43,10 +43,11 @@ class LoginController extends Controller
         $uid=uniqid();
         $url='http://yuedu.1548580932.top/oauth?uid='.$uid;
 
-        $obj= new QRcode();
-        $b=$obj->png($url,'/1.png');
-
-        return redirect('login/qrcode',['img'=>$b]);
+        $obj= new \QRcode();
+        $obj->png($url,'/qrcode.png');
+        $QR = '/qrcode.png'; //已经生成的原始二维码图
+        echo '<img src="'.$QR.'">';die;
+        return redirect('login/qrcode');
     }
 
     public function index(){
