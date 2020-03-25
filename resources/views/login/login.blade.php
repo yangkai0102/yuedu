@@ -25,7 +25,7 @@
 
     <form method="post" class="layui-form" action="{{url('login/logindo')}}">
 
-        <input name="username" placeholder="手机号"  type="text" lay-verify="required" class="layui-input" >
+        <input name="tel" placeholder="手机号"  type="text" lay-verify="required" class="layui-input" >
         <hr class="hr15">
         <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
         <hr class="hr15">

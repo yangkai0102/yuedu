@@ -19,17 +19,17 @@ class LoginController extends Controller
         $pwd=request()->input('password');
         $where=
             ['tel'=>$tel];
-        $res=LoginModel::where($where)->first();
+        $res=LoginModel::where($where)->first()->toArray();
 //        dd($res);
         if($res){
-            
-            if($pwd==$res['pwd']){
+
+            if($pwd==$res['password']){
                 return redirect("/index");
             }else{
                 dd("密码错误");
             }
         }else{
-            dd('用户名不存在');
+            dd('手机号不存在');
         }
     }
 
