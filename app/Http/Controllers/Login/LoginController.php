@@ -19,9 +19,10 @@ class LoginController extends Controller
         $pwd=request()->input('password');
         $where=
             ['tel'=>$tel];
-        $res=LoginModel::where($where)->first()->toArray();
+        $res=LoginModel::where($where)->first();
 //        dd($res);
         if($res){
+            
             if($pwd==$res['pwd']){
                 return redirect("/index");
             }else{
