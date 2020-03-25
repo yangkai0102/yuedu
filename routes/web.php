@@ -16,6 +16,7 @@
 //});
 
 Route::get('/','Login\LoginController@login');
+Route::post('/login/logindo','Login\LoginController@logindo');
 
 Route::get('/login/code','Login\LoginController@code');
 

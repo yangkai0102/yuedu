@@ -23,7 +23,7 @@
     <div class="message">QQ阅读登录</div>
     <div id="darkbannerwrap"></div>
 
-    <form method="post" class="layui-form" >
+    <form method="post" class="layui-form" action="{{url('login/logindo')}}">
 
         <input name="username" placeholder="手机号"  type="text" lay-verify="required" class="layui-input" >
         <hr class="hr15">

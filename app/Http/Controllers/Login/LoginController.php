@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Login;
 
 use App\Http\Controllers\Controller;
+use App\Login\LoginModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 use phpqrcode;
 class LoginController extends Controller
 {
@@ -13,7 +15,21 @@ class LoginController extends Controller
     }
 
     public function logindo(){
-
+        $tel=request()->input('tel');
+        $pwd=request()->input('password');
+        $where=
+            ['tel'=>$tel];
+        $res=LoginModel::where($where)->first()->toArray();
+//        dd($res);
+        if($res){
+            if($pwd==$res['pwd']){
+                return redirect("/index");
+            }else{
+                dd("密码错误");
+            }
+        }else{
+            dd('用户名不存在');
+        }
     }
 
     public function login2(){
@@ -33,6 +49,7 @@ class LoginController extends Controller
 
     public function oauth(){
         $uid=$_GET['uid'];
+
         $id="wx112dc5198a6a8695";
         $uri=urlencode("http://yuedu.1548580932.top/login2");
         $url="https://open.weixin.qq.com/connect/oauth2/authorize?appid=".$id."&redirect_uri=".$uri."&response_type=code&scope=snsapi_userinfo&state=yk01#wechat_redirect";
