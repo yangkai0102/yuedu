@@ -44,7 +44,7 @@ class LoginController extends Controller
         $url='http://yuedu.1548580932.top/oauth?uid='.$uid;
         $obj= new \QRcode();
         $a=$obj->png($url,'/1.png');
-
+        dd($a);
         return redirect('login/qrcode',['img'=>$a]);
     }
 
