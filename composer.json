@@ -34,8 +34,8 @@
         "psr-4": {
             "App\\": "app/"
         },
-        "file": [
-            "app/Common/Function.php"
+        "files":[
+            "app/Functions.php"
         ],
         "classmap": [
             "database/seeds",
