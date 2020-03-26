@@ -8,7 +8,7 @@
     <title>微信二维码</title>
 </head>
 <body><center>
-    <img src="{{$img}}" alt="">
+    <img src="/qrcode.png" alt="">
     <span>请扫描二维码</span>
 </center>
 </body>
