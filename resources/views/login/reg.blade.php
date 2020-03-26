@@ -57,17 +57,14 @@
             return false;
         }
         $.ajax({
-            method:'post',
-            url:"{{url('/reg/span_tel')}}",
-            data:{user_tel: user_tel},
-            dataType:'json',
-            success:function (res) {
-            alert(res.font);
-            //console.log(res);
-        },
-
-        }
-
-        );
+            method: 'post',
+            url: "{{url('/reg/span_tel')}}",
+            data: {user_tel: user_tel},
+            dataType: 'json',
+            success: function (res) {
+                alert(res.font);
+                //console.log(res);
+            }
+        });
     })
 </script>
