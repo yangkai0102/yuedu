@@ -139,8 +139,10 @@ class LoginController extends Controller
             dd('密码不能为空');
         }
         $data=['tel'=>$tel,'password'=>$password];
-        UserModel::insert($data);
-
+        $res=UserModel::insert($data);
+        if($res){
+            return redirect('/');
+        }
 
     }
 
