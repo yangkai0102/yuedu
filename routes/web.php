@@ -14,6 +14,7 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+Route::get('/wx','Login\LoginController@wx');
 
 Route::get('/','Login\LoginController@login');
 Route::post('/login/logindo','Login\LoginController@logindo');

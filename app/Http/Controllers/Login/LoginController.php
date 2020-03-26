@@ -10,6 +10,10 @@ use phpqrcode;
 class LoginController extends Controller
 {
     //
+    public function wx(){
+        echo $_GET['echostr'];
+    }
+
     public function login(){
         return view('login/login');
     }
