@@ -30,7 +30,10 @@ Route::get('/oauth','Login\LoginController@oauth');
 Route::get('/login2','Login\LoginController@login2');
 
 //注册
-Route::post('/reg','Login\LoginController@reg');
+Route::get('/reg','Login\LoginController@reg');
+
+Route::post('/reg/span_tel','Login\LoginController@span_tel');
+
 
 
 
