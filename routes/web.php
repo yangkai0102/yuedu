@@ -31,7 +31,7 @@ Route::get('/login2','Login\LoginController@login2');
 
 //注册
 Route::get('/reg','Login\LoginController@reg');
-Route::post('/regdo','Login\LoginController@regdo');
+Route::post('/login/regdo','Login\LoginController@regdo');
 
 Route::post('/reg/span_tel','Login\LoginController@span_tel');
 
