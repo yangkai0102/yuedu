@@ -27,10 +27,12 @@
 
         <input name="tel" placeholder="手机号"  type="text" id="tel" lay-verify="required" class="layui-input" >
         <hr class="hr15">
-        <input type="tel" name="user_code" lay-verify="required" id="tel_code" placeholder="请输入验证码">
+        <input type="text" name="code" lay-verify="required" id="tel_code" placeholder="请输入验证码">
         <a class="btn" href="javascript:void(0);" id="sendTelCode">
             <span class="dyButton" id="span_tel">获取</span>
         </a>
+        <input name="password" placeholder="密码"  type="text" id="tel" lay-verify="required" class="layui-input" >
+        <hr class="hr15">
         <input value="注册" lay-submit lay-filter="login" style="width:100%;" type="submit">
 
         <hr class="hr20" >

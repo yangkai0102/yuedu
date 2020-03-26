@@ -102,12 +102,46 @@ class LoginController extends Controller
         $body = "您的验证码为：".$code."，五分钟内有效。请勿泄露！!";
         $res  = sendSms($user_tel,$code);
         if($res){
-            $telInfo = ['user_tel'=>$user_tel,'code'=>$code,'send_time'=>time()];
+            $telInfo = ['user_tel'=>$user_tel,'code'=>$code];
             session('telInfo',$telInfo);
             echo json_encode(['font'=>'发送成功','code'=>1]);
         }else{
             echo json_encode(['font'=>'发送失败','code'=>2]);exit;
         }
+    }
+
+    public function regdo(){
+        $tel=request()->input('tel');
+        $code=request()->input('code');
+        $password=request()->input('password');
+
+        $telInfo = session('telInfo');
+        //验证手机号
+        $reg ='/^1\d{10}$/';
+        if(empty($tel)){
+            dd('电话不能为空');
+        }else if(!preg_match($reg,$tel)){
+            dd('电话必须以1开头，不能超过11位');
+        }else{
+            $count = UserModel::where('tel',$tel)->count();
+            if($count>0){
+                dd('电话已存在');
+            }
+        }
+        //验证验证码
+        if(empty($code)){
+            dd('验证码不能为空');
+        }
+        else if($code!=$telInfo['code']){
+            dd('验证码错误');
+        }
+        if(empty($password)){
+            dd('密码不能为空');
+        }
+        $data=['tel'=>$tel,'password'=>$password];
+        UserModel::insert($data);
+
+
     }
 
 
