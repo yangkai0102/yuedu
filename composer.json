@@ -37,7 +37,8 @@
         "classmap": [
             "database/seeds",
             "database/factories",
-            "app/Lib/phpqrcode.php"
+            "app/Lib/phpqrcode.php",
+            "app/Lib/sendSms.php"
         ]
     },
     "autoload-dev": {

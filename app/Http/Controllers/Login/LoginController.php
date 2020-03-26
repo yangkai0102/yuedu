@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Login;
 
 use App\Http\Controllers\Controller;
 use App\Login\LoginModel;
+use App\Login\UserModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
 use QRcode;
@@ -50,6 +51,12 @@ class LoginController extends Controller
         $user=json_decode($userinfo,true);
         print_r($user);
         $openid=$user['openid'];
+        $uid=session('uid');
+        $data=[
+            'openid'=>$openid,
+            'uid'=>$uid
+        ];
+        UserModel::insert($data);
 
         
 
@@ -57,7 +64,7 @@ class LoginController extends Controller
 
     public function oauth(){
         $uid=$_GET['uid'];
-
+        session(['uid'=>$uid]);
         $id="wx112dc5198a6a8695";
         $uri=urlencode("http://yuedu.1548580932.top/login2");
         $url="https://open.weixin.qq.com/connect/oauth2/authorize?appid=".$id."&redirect_uri=".$uri."&response_type=code&scope=snsapi_userinfo&state=yk01#wechat_redirect";
@@ -67,11 +74,13 @@ class LoginController extends Controller
     public function code(){
         $uid=uniqid();
         $url='http://yuedu.1548580932.top/oauth?uid='.$uid;
+        $res=UserModel::where('uid',$uid)->get();
 
         $obj= new QRcode();
 //        $path='/images/';
 //        $fileName = $path.'.png';
         $obj->png($url,public_path('/qrcode.png'));
+
         return redirect('login/qrcode');
     }
 
@@ -80,5 +89,23 @@ class LoginController extends Controller
     }
     public function index(){
         return view('index/index');
+    }
+
+    public function reg(){
+        return view('/reg');
+    }
+
+    public function span_tel(){
+        $user_tel=request()->input('user_tel');
+        $code = rand(100000,999999);
+        $body = "您的验证码为：".$code."，五分钟内有效。请勿泄露！!";
+        $res  = sendSms($user_tel,$code);
+        if($res){
+            $telInfo = ['user_tel'=>$user_tel,'code'=>$code,'send_time'=>time()];
+            session('telInfo',$telInfo);
+            echo json_encode(['font'=>'发送成功','code'=>1]);
+        }else{
+            echo json_encode(['font'=>'发送失败','code'=>2]);exit;
+        }
     }
 }

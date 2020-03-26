@@ -20,18 +20,19 @@
 <body class="login-bg">
 
 <div class="login layui-anim layui-anim-up">
-    <div class="message">QQ阅读登录</div>
+    <div class="message">QQ阅读手机号注册</div>
     <div id="darkbannerwrap"></div>
 
     <form method="post" class="layui-form" action="{{url('login/logindo')}}">
 
-        <input name="tel" placeholder="手机号"  type="text" lay-verify="required" class="layui-input" >
+        <input name="tel" placeholder="手机号"  type="text" id="tel" lay-verify="required" class="layui-input" >
         <hr class="hr15">
-        <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
-        <hr class="hr15">
-        <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
-        <center><a href="{{url('login/code')}}">扫码登录</a></center>
-        <a href="/reg">去注册</a>
+        <input type="tel" name="user_code" lay-verify="required" id="tel_code" placeholder="请输入验证码">
+        <a class="btn" href="javascript:void(0);" id="sendTelCode">
+            <span class="dyButton" id="span_tel">获取</span>
+        </a>
+        <input value="注册" lay-submit lay-filter="login" style="width:100%;" type="submit">
+
         <hr class="hr20" >
     </form>
 </div>
@@ -39,3 +40,28 @@
 
 </body>
 </html>
+<script>
+    $(document).on('click','#span_tel',function() {
+        // alert(111);
+        // return false;
+        //获取电话框
+        var user_tel = $('#tel').val();
+        reg = /^1\d{10}$/;
+        if (user_tel == '') {
+            alert('电话不能为空');
+            return false;
+        } else if (!reg.test(user_tel)) {
+            alert('电话必须以1开头，不能超过11位');
+            return false;
+        }
+        $.post(
+            "{{url('/reg/span_tel')}}",
+            {user_tel: user_tel},
+            function (res) {
+                alert(res.font);
+                //console.log(res);
+            },
+            'json'
+        );
+    })
+</script>

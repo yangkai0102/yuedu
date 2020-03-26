@@ -29,5 +29,9 @@ Route::get('/index','Login\LoginController@index');
 Route::get('/oauth','Login\LoginController@oauth');
 Route::get('/login2','Login\LoginController@login2');
 
+//注册
+Route::post('/reg','Login\LoginController@reg');
+
+
 
 
