@@ -31,7 +31,7 @@
         <hr class="hr15">
         <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
         <center><a href="{{url('login/code')}}">扫码登录</a></center>
-        <a href="/reg">去注册</a>
+        <a href="{{url('reg')}}">去注册</a>
         <hr class="hr20" >
     </form>
 </div>
