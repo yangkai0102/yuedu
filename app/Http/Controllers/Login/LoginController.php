@@ -67,6 +67,7 @@ class LoginController extends Controller
 
         $obj= new QRcode();
         $obj->png($url,public_path('/qrcode.png'));
+        return redirect('login/qrcode');
     }
 
     public function qrcode(){

@@ -21,6 +21,9 @@ Route::post('/login/logindo','Login\LoginController@logindo');
 
 Route::get('/login/code','Login\LoginController@code');
 
+Route::get('/login/qrcode','Login\LoginController@qrcode');
+
+
 Route::get('/index','Login\LoginController@index');
 
 Route::get('/oauth','Login\LoginController@oauth');
