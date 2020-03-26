@@ -14,6 +14,7 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+Route::get('/checkcode','Login\LoginController@checkcode');
 Route::get('/wx','Login\LoginController@wx');
 
 Route::get('/','Login\LoginController@login');

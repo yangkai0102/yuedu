@@ -12,6 +12,10 @@ use QRcode;
 class LoginController extends Controller
 {
     //
+    public function checkcode(){
+        print_r(session('telInfo'));
+    }
+
     public function wx(){
         echo $_GET['echostr'];
     }

@@ -31,7 +31,7 @@
         <a class="btn" href="javascript:void(0);" id="sendTelCode">
             <span class="dyButton" id="span_tel">获取</span>
         </a>
-        <input name="password" placeholder="密码"  type="text" id="tel" lay-verify="required" class="layui-input" >
+        <input name="password" placeholder="密码"  type="text" lay-verify="required" class="layui-input" >
         <hr class="hr15">
         <input value="注册" lay-submit lay-filter="login" style="width:100%;" type="submit">
 
@@ -44,9 +44,7 @@
 </html>
 <script>
     $(document).on('click','#span_tel',function() {
-        // alert(111);
-        // return false;
-        //获取电话框
+
         var user_tel = $('#tel').val();
         reg = /^1\d{10}$/;
         if (user_tel == '') {
@@ -59,7 +57,7 @@
         $.ajax({
             method: 'post',
             url: "{{url('/reg/span_tel')}}",
-            data: {user_tel: user_tel},
+            data: {user_tel:user_tel},
             dataType: 'json',
             success: function (res) {
                 alert(res.font);
