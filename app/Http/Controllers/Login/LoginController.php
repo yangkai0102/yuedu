@@ -28,7 +28,7 @@ class LoginController extends Controller
         if($res){
 
             if($pwd==$res['password']){
-                return redirect("/index");
+                return redirect("/");
             }else{
                 dd("密码错误");
             }
@@ -66,13 +66,13 @@ class LoginController extends Controller
         $url='http://yuedu.1548580932.top/oauth?uid='.$uid;
 
         $obj= new QRcode();
-        $obj->png($url,'/qrcode.png');
+        $obj->png($url,public_path('qrcode.png'));
     }
 
     public function qrcode(){
         return view('/login/qrcode');
     }
     public function index(){
-        return view('index/index');
+        return view('/');
     }
 }

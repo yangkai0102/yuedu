@@ -68,7 +68,7 @@ href="http://zc.qq.com/chs/index.html?from=pt">注册</a> --><a class="login"
 attr="click:openLoginPopup;" href="javascript:;">登录/注册</a></div><%/if%></div><!
 --顶部右边区块--><div class="topRight"><%if isLogin%><a class="myreader" href="http://
 account.book.qq.com/userfavorite/index.html">我的书架<b></b></a><%else%><a
-class="myreader" href="javascript:;">最近阅读<b></b></a><%/if%><a
+class="myreader" href="javascript:;">最近阅读<b></b></a><a href="/login">登录</a><a
 class="user_center" href="http://account.book.qq.com">个人中心<b></b></a><a
 class="author_Zone" href="https://write.qq.com/?siteid=3">作家专区</a><span
 class="navline">|</span><a class="pay"
@@ -81,10 +81,7 @@ userInfo.bookshelfList as bookshelf i%><a class="a_nobg" href="http://account.bo
 ok.qq.com/userfavorite/index.html?Favoriteid=</a><%/each%><%/if%></div><%else%><!-- 最近阅读列表 --><div
 class="nav_hover_list cf"><a
 class="a_nobg"
-href="<%/if%></div><%if
-!userInfo.recentReadList || userInfo.recentReadList.length ===
-0%><p>最近没有阅读书</p><%/if%><%/if%></div><!-- 个人中心的下拉列表 --><div
-class="user_menu"><div class="nav_hover_list cf"><a
+href=""><div class="nav_hover_list cf"><a
 href="http://account.book.qq.com/userfavorite/index.html">我的书架</a><a
 href="http://account.book.qq.com/usercenter/index.html">账户设置</a><a
 class="a_nobg" href="http://account.book.qq.com/usermoney/index.html">账务中心
