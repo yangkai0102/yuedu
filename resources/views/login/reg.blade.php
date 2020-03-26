@@ -23,7 +23,7 @@
     <div class="message">QQ阅读手机号注册</div>
     <div id="darkbannerwrap"></div>
 
-    <form method="post" class="layui-form" action="{{url('/reg')}}">
+    <form method="post" class="layui-form" action="{{url('/regdo')}}">
 
         <input name="tel" placeholder="手机号"  type="text" id="tel" lay-verify="required" class="layui-input" >
         <hr class="hr15">
