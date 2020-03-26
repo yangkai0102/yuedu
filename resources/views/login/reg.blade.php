@@ -56,14 +56,16 @@
             alert('电话必须以1开头，不能超过11位');
             return false;
         }
-        $.post(
-            "{{url('/reg/span_tel')}}",
-            {user_tel: user_tel},
-            function (res) {
-                alert(res.font);
-                //console.log(res);
-            },
-            'json'
+        $.ajax({
+            url:"{{url('/reg/span_tel')}}",
+            data:{user_tel: user_tel},
+            success:function (res) {
+            alert(res.font);
+            //console.log(res);
+        },
+
+        }
+
         );
     })
 </script>

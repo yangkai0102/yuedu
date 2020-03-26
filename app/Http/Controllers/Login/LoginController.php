@@ -17,7 +17,7 @@ class LoginController extends Controller
     }
 
     public function login(){
-        return view('/');
+        return view('login/login');
     }
 
     public function logindo(){
