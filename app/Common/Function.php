@@ -1,7 +1,9 @@
 <?php
+
 //短信
-function sendSms($tel,$code){
-    $params = array ();
+function sendSms($tel, $code)
+{
+    $params = array();
 
     // *** 需用户填写部分 ***
     // fixme 必填：是否启用https
@@ -21,7 +23,7 @@ function sendSms($tel,$code){
     $params["TemplateCode"] = "SMS_172880108";
 
     // fixme 可选: 设置模板参数, 假如模板中存在变量需要替换则为必填项
-    $params['TemplateParam'] = Array (
+    $params['TemplateParam'] = Array(
         "code" => $code,
     );
 
@@ -33,7 +35,7 @@ function sendSms($tel,$code){
 
 
     // *** 需用户填写部分结束, 以下代码若无必要无需更改 ***
-    if(!empty($params["TemplateParam"]) && is_array($params["TemplateParam"])) {
+    if (!empty($params["TemplateParam"]) && is_array($params["TemplateParam"])) {
         $params["TemplateParam"] = json_encode($params["TemplateParam"], JSON_UNESCAPED_UNICODE);
     }
 

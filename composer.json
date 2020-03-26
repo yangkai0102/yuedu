@@ -34,11 +34,13 @@
         "psr-4": {
             "App\\": "app/"
         },
+        "file": [
+            "app/Common/Function.php"
+        ],
         "classmap": [
             "database/seeds",
             "database/factories",
-            "app/Lib/phpqrcode.php",
-            "app/Lib/sendSms.php"
+            "app/Lib/phpqrcode.php"
         ]
     },
     "autoload-dev": {
