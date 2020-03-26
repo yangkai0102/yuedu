@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Login\LoginModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redis;
-use phpqrcode;
+use QRcode;
 class LoginController extends Controller
 {
     //
@@ -65,7 +65,7 @@ class LoginController extends Controller
         $uid=uniqid();
         $url='http://yuedu.1548580932.top/oauth?uid='.$uid;
 
-        $obj= new \QRcode();
+        $obj= new QRcode();
         $obj->png($url,public_path('/qrcode.png'));
         $QR = public_path('/qrcode.png'); //已经生成的原始二维码图
         echo '<img src="'.$QR.'">';die;
