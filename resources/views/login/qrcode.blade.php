@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>微信二维码</title>
 </head>
-<body>
-<img src="/qrcode.png" alt="">
+<body><center>
+    <img src="{{$img}}" alt="">
+    <span>请扫描二维码</span>
+</center>
 </body>
 </html>
