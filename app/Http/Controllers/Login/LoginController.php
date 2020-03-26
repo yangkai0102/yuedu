@@ -45,10 +45,11 @@ class LoginController extends Controller
         $res=file_get_contents($tokenurl);
         $token=json_decode($res,true)['access_token'];
         $openid=json_decode($res,true)['openid'];
-        $userurl=" https://api.weixin.qq.com/sns/userinfo?access_token=".$token."&openid=".$openid."&lang=zh_CN";
+        $userurl="https://api.weixin.qq.com/sns/userinfo?access_token=".$token."&openid=".$openid."&lang=zh_CN";
         $userinfo=file_get_contents($userurl);
         $user=json_decode($userinfo,true);
         print_r($user);
+        
 
     }
 
