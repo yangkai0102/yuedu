@@ -18,7 +18,7 @@
     <![endif]-->
 </head>
 <body class="login-bg">
-
+<a href="{{url('/index')}}">阅读页面</a>
 <div class="login layui-anim layui-anim-up">
     <div class="message">QQ阅读登录</div>
     <div id="darkbannerwrap"></div>
