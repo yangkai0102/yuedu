@@ -17,7 +17,7 @@
 Route::get('/checkcode','Login\LoginController@checkcode');
 Route::get('/wx','Login\LoginController@wx');
 
-Route::get('/','Login\LoginController@login');
+Route::get('/login','Login\LoginController@login');
 Route::post('/login/logindo','Login\LoginController@logindo');
 
 Route::get('/login/code','Login\LoginController@code');
@@ -25,7 +25,7 @@ Route::get('/login/code','Login\LoginController@code');
 Route::get('/login/qrcode','Login\LoginController@qrcode');
 
 
-Route::get('/index','Login\LoginController@index');
+Route::get('/','Login\LoginController@index');
 
 Route::get('/oauth','Login\LoginController@oauth');
 Route::get('/login2','Login\LoginController@login2');

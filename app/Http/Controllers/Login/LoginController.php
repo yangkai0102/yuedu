@@ -34,7 +34,7 @@ class LoginController extends Controller
         if($res){
 
             if($pwd==$res['password']){
-                return redirect("/index");
+                return redirect("/");
             }else{
                 dd("密码错误");
             }
@@ -145,7 +145,7 @@ class LoginController extends Controller
         $data=['tel'=>$tel,'password'=>$password];
         $res=UserModel::insert($data);
         if($res){
-            return redirect('/');
+            return redirect('/login');
         }
 
     }
