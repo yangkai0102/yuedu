@@ -107,7 +107,7 @@ class LoginController extends Controller
         $res  = sendSms($user_tel,$code);
         if($res){
             $telInfo = ['user_tel'=>$user_tel,'code'=>$code];
-            session('telInfo',$telInfo);
+            session(['telInfo'=>$telInfo]);
             echo json_encode(['font'=>'发送成功','code'=>1]);
         }else{
             echo json_encode(['font'=>'发送失败','code'=>2]);exit;

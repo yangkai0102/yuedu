@@ -68,7 +68,7 @@ href="http://zc.qq.com/chs/index.html?from=pt">注册</a> --><a class="login"
 attr="click:openLoginPopup;" href="javascript:;">登录/注册</a></div><%/if%></div><!
 --顶部右边区块--><div class="topRight"><%if isLogin%><a class="myreader" href="http://
 account.book.qq.com/userfavorite/index.html">我的书架<b></b></a><%else%><a
-class="myreader" href="javascript:;">最近阅读<b></b></a><a href="/login">登录</a><a
+class="myreader" href="javascript:;">最近阅读<b></b></a><a
 class="user_center" href="http://account.book.qq.com">个人中心<b></b></a><a
 class="author_Zone" href="https://write.qq.com/?siteid=3">作家专区</a><span
 class="navline">|</span><a class="pay"
@@ -102,14 +102,16 @@ type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html",
     $(function(){         //书架         CS.bookshelf.init(addToBookshelfAjaxUrl);
 //顶部导航条         CS.topNav.init(getUserInfoAjaxUrl, getUserNewMsgUrl);     });
 </script> <div class="pageCenter"><div class="bookheader cf"><div class="logo
-fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
+fl"><a href="/login/login">去登录</a><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
 src="static/picture/txwxlogo.jpg"></a></div><div class="titleSearch fl cf"><div
 class="searchClass" id="searchClass"><em type="all"
 id="currentSiteBtn">全部</em><div id="searchSiteList" class="searchClass_SubBox"
-style="display:none;"><a href="javascript:" type="all">全部</a><a
-href="javascript:" type="chuangshi">创世</a><a href="javascript:"
-type="yunqi">云起</a><a href="javascript:"
-type="dushu">图书</a></div></div><span></span><input id="searchInputBySite"
+style="display:none;">
+                    <a href="javascript:" type="all">全部</a>
+                    <a href="javascript:" type="chuangshi">创世</a>
+                    <a href="javascript:" type="yunqi">云起</a>
+                    <a href="javascript:" type="dushu">图书</a>
+                </div></div><span></span><input id="searchInputBySite"
 type="text" class="clearInput" style="color: rgb(153, 153, 153);"  def="大国重工"
 value="大国重工"/><input id="searchBySiteBtn" type="button" class="searchBtn"><div
 class="hotWords">热词： <a href="http://yunqi.qq.com/bk/gdyq/26835006.html"
