@@ -29,7 +29,7 @@ class LoginController extends Controller
         $pwd=request()->input('password');
         $where=
             ['tel'=>$tel];
-        $res=LoginModel::where($where)->first()->toArray();
+        $res=UserModel::where($where)->first()->toArray();
 //        dd($res);
         if($res){
 
