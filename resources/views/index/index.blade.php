@@ -101,8 +101,8 @@ type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html",
 
     $(function(){         //书架         CS.bookshelf.init(addToBookshelfAjaxUrl);
 //顶部导航条         CS.topNav.init(getUserInfoAjaxUrl, getUserNewMsgUrl);     });
-</script> <div class="pageCenter"><div class="bookheader cf"><div class="logo
-fl"><a href="/login/login">去登录</a><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
+</script><a href="/login"><h3>去登录</h3></a> <div class="pageCenter"><div class="bookheader cf"><div class="logo
+fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
 src="static/picture/txwxlogo.jpg"></a></div><div class="titleSearch fl cf"><div
 class="searchClass" id="searchClass">
                 <form action=""><em type="all"
