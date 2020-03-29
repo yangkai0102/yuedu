@@ -120,7 +120,7 @@ src="static/picture/txwxlogo.jpg"></a></div>
                                 <option value="{{$v->cate_id}}">{{$v->bname}}</option>
                             @endforeach
                         </select>
-                <span></span>
+                    <input type="text" name="bname">
                     <input  type="submit" value="搜索" >
             </form>
 
