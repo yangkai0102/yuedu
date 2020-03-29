@@ -111,7 +111,7 @@ class LoginController extends Controller
         $bname=request()->input('bname');
         $where=[];
         if($bname){
-            $where[] =['name','like',"%$bname%"];
+            $where[] =['bname','like',"%$bname%"];
         }
         if($cate_id){
             $where[] = ['cate_id','like',"%$cate_id%"];
