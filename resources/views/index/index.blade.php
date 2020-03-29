@@ -113,7 +113,7 @@ fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动�
 src="static/picture/txwxlogo.jpg"></a></div><div class="titleSearch fl cf"><div
 class="searchClass" id="searchClass">
                 <form action="">
-                        <select name="status" id="">
+                        <select name="cate_id" id="">
                             <option value="">--请选择--</option>
                             @foreach($data as $k=>$v)
                                 <option value="{{$v->cate_id}}">{{$v->bname}}</option>
