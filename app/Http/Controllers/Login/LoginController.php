@@ -107,8 +107,8 @@ class LoginController extends Controller
 
     public function sousuo(){
 
-        $cate_id=request()->inptu('cate_id');
-        $bname=request()->inptu('bname');
+        $cate_id=request()->input('cate_id');
+        $bname=request()->input('bname');
         $where=[];
         if($bname){
             $where[] =['name','like',"%$bname%"];
