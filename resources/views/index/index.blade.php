@@ -112,18 +112,14 @@ type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html",
 fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
 src="static/picture/txwxlogo.jpg"></a></div><div class="titleSearch fl cf"><div
 class="searchClass" id="searchClass">
-                <form action=""><em type="all"
-id="currentSiteBtn">全部</em><div id="searchSiteList" class="searchClass_SubBox"
-style="display:none;">
+                <form action="">
                         <select name="status" id="">
                             <option value="">--请选择--</option>
                             @foreach($data as $k=>$v)
                                 <option value="{{$v->cate_id}}">{{$v->bname}}</option>
                             @endforeach
                         </select>
-                </div><span></span><input id="searchInputBySite"
-type="text" class="clearInput" style="color: rgb(153, 153, 153);"  def="大国重工"
-value="大国重工"/><input  type="submit" value="搜索" >
+                <input  type="submit" value="搜索" >
             </form><div
 class="hotWords">热词： <a href="http://yunqi.qq.com/bk/gdyq/26835006.html"
 target="_blank">只想继承你的家产</a><a href="http://yunqi.qq.com/bk/gdyq/26550647.html"
