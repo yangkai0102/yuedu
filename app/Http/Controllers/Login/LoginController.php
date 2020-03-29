@@ -119,7 +119,7 @@ class LoginController extends Controller
 
         $res=BookModel::where($where)->get();
         if($res){
-            return redirect('index/detail');
+            return redirect('/detail');
         }else{
             return redirect('index/404');
         }

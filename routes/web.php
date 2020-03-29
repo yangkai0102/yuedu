@@ -29,7 +29,7 @@ Route::get('/','Login\LoginController@index');
 
 Route::get('/index/sousuo','Login\LoginController@sousuo');
 
-Route::get('/index/detail','Login\LoginController@detail');
+Route::get('/detail','Login\LoginController@detail');
 
 
 Route::get('/oauth','Login\LoginController@oauth');
