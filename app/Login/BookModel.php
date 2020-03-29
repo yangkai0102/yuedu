@@ -4,10 +4,10 @@ namespace App\Login;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CateModel extends Model
+class BookModel extends Model
 {
     //
-    public $primaryKey='cate_id';
-    public $table='category';
+    public $primaryKey='id';
+    public $table='book';
     public $timestamps=false;
 }

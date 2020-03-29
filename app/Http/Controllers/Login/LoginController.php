@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Login;
 
 use App\Http\Controllers\Controller;
+use App\Login\BookModel;
 use App\Login\CateModel;
 use App\Login\LoginModel;
 use App\Login\UserModel;
@@ -96,8 +97,33 @@ class LoginController extends Controller
     }
     public function index(){
         $res=CateModel::get();
-
         return view('index/index',['data'=>$res]);
+    }
+
+    public function detail(){
+
+        return view('index/detail');
+    }
+
+    public function sousuo(){
+
+        $cate_id=request()->inptu('cate_id');
+        $bname=request()->inptu('bname');
+        $where=[];
+        if($bname){
+            $where[] =['name','like',"%$bname%"];
+        }
+        if($cate_id){
+            $where[] = ['cate_id','like',"%$cate_id%"];
+        }
+
+        $res=BookModel::where($where)->get();
+        if($res){
+            return redirect('index/detail',['data'=>$res]);
+        }else{
+            return redirect('index/404');
+        }
+
     }
 
     public function reg(){

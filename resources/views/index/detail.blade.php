@@ -59,44 +59,7 @@ target="_blank">安卓端下载</a> --></div></li></ul></div><!--登录前后容
                         class="navline">|</span><a class="exit" attr="click:ywlogout;"
                                                    href="javascript:;">退出</a><a class="userName"
                                                                                 href="http://account.book.qq.com/usercenter/index.html">欢迎您，<%=userInfo.Nickname
-? userInfo.Nickname : ''%></a></div><%else%><div class="login_before"><span
-class="navline">|</span><!-- <a class="reg" target="_blank"
-href="http://zc.qq.com/chs/index.html?from=pt">注册</a> --><a class="login"
-attr="click:openLoginPopup;" href="javascript:;">登录/注册</a></div><%/if%></div><!
---顶部右边区块--><div class="topRight"><%if isLogin%><a class="myreader" href="http://
-account.book.qq.com/userfavorite/index.html">我的书架<b></b></a><%else%><a
-class="myreader" href="javascript:;">最近阅读<b></b></a><%/if%><a
-class="user_center" href="http://account.book.qq.com">个人中心<b></b></a><a
-class="author_Zone" href="https://write.qq.com/?siteid=4">作家专区</a><span
-class="navline">|</span><a class="pay"
-href="http://account.book.qq.com/public/recharge.html"
-target="_blank">充值</a><!-- 我的书架的下拉列表 --><div class="bookrack"><%if
-isLogin%><p><span class="ccc">书架藏书：<%=userInfo.collectBookNum ?
-userInfo.collectBookNum : 0%>本</span></p><div class="nav_hover_list cf"><a href=
-"http://account.book.qq.com/userfavorite/index.html?bookshelf_show=2">最近阅读</a><%
-if userInfo.bookshelfList && userInfo.bookshelfList.length%><%each
-userInfo.bookshelfList as bookshelf i%><a class="a_nobg" href="http://account.bo
-ok.qq.com/userfavorite/index.html?Favoriteid=<%=bookshelf.groupId%>"><%=bookshel
-f.groupName%></a><%/each%><%/if%></div><%else%><!-- 最近阅读列表 --><div
-class="nav_hover_list cf"><%if userInfo.recentReadList &&
-userInfo.recentReadList.length%><%each userInfo.recentReadList as book i%><a
-class="a_nobg"
-href="<%=book.bookUrl%>"><%=book.bookName%></a><%/each%><%/if%></div><%if
-!userInfo.recentReadList || userInfo.recentReadList.length ===
-0%><p>最近没有阅读书</p><%/if%><%/if%></div><!-- 个人中心的下拉列表 --><div
-class="user_menu"><div class="nav_hover_list cf"><a
-href="http://account.book.qq.com/userfavorite/index.html">我的书架</a><a
-href="http://account.book.qq.com/usercenter/index.html">账户设置</a><a
-class="a_nobg" href="http://account.book.qq.com/usermoney/index.html">账务中心
-</a><a class="a_nobg"
-href="https://write.qq.com/?siteid=4">作家专区</a></div></div><!--个人短信数量--><div
-id="pointy_msg"></div></div></div></textarea><script type="text/javascript">
-var getUserInfoAjaxUrl = "/public/showhead.html"; //获取用户信息     var searchUrl =
-"/search/searchindex/type/p1/wd/p2.html";
-
-    $(function () {         //顶部导航条         CS.topNav.init(getUserInfoAjaxUrl);
-//各页面通用         CS.common.init();         //初始化搜索框
-CS.searchInput.init(searchUrl, 'p_navtit_hover');     }); </script><div
+<div
 class="wrap"><div class="pageCenter"><div class="mainnav"><a class="red2"
 href="http://yunqi.qq.com">首页</a><a href="/bk">书库</a><a
 href="/search/index.html">搜书</a><a href="/ranklist/index.html">排行榜</a><a
