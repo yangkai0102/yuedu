@@ -101,18 +101,27 @@ type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html",
 
     $(function(){         //书架         CS.bookshelf.init(addToBookshelfAjaxUrl);
 //顶部导航条         CS.topNav.init(getUserInfoAjaxUrl, getUserNewMsgUrl);     });
-</script><a href="/login"><h3>去登录</h3></a> <div class="pageCenter"><div class="bookheader cf"><div class="logo
+</script>
+@if(empty(Session::get('user')))
+    <a href="/login"><h3>去登录</h3></a>
+@else
+    <h3>{{Session::get('user')}}</h3>
+@endif
+
+    <div class="pageCenter"><div class="bookheader cf"><div class="logo
 fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
 src="static/picture/txwxlogo.jpg"></a></div><div class="titleSearch fl cf"><div
 class="searchClass" id="searchClass">
                 <form action=""><em type="all"
 id="currentSiteBtn">全部</em><div id="searchSiteList" class="searchClass_SubBox"
 style="display:none;">
-                    <a href="javascript:" type="all">全部</a>
-                    <a href="javascript:" type="chuangshi">创世</a>
-                    <a href="javascript:" type="yunqi">云起</a>
-                    <a href="javascript:" type="dushu">图书</a>
-                </div></div><span></span><input id="searchInputBySite"
+                        <select name="status" id="">
+                            <option value="">--请选择--</option>
+                            @foreach($data as $k=>$v)
+                                <option value="{{$v->cate_id}}">{{$v->bname}}</option>
+                            @endforeach
+                        </select>
+                </div><span></span><input id="searchInputBySite"
 type="text" class="clearInput" style="color: rgb(153, 153, 153);"  def="大国重工"
 value="大国重工"/><input  type="submit" value="搜索" >
             </form><div

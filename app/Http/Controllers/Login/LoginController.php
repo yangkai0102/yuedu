@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Login;
 
 use App\Http\Controllers\Controller;
+use App\Login\CateModel;
 use App\Login\LoginModel;
 use App\Login\UserModel;
 use Illuminate\Http\Request;
@@ -34,6 +35,7 @@ class LoginController extends Controller
         if($res){
 
             if($pwd==$res['password']){
+                session(['user'=>$tel]);
                 return redirect("/");
             }else{
                 dd("密码错误");
@@ -93,7 +95,9 @@ class LoginController extends Controller
         return view('/login/qrcode');
     }
     public function index(){
-        return view('index/index');
+        $res=CateModel::get();
+
+        return view('index/index',['data'=>$res]);
     }
 
     public function reg(){
