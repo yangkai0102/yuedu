@@ -118,7 +118,7 @@ class LoginController extends Controller
         }
 
         $res=BookModel::where($where)->get();
-        if($res){
+        if( $res){
             return redirect('/detail');
         }else{
             return redirect('/found');
@@ -135,6 +135,18 @@ class LoginController extends Controller
 
     public function span_tel(){
         $user_tel=request()->input('user_tel');
+        //短信验证
+        $reg ='/^1\d{10}$/';
+        if(empty($user_tel)){
+            echo json_encode(['font'=>'电话不能为空','code'=>2]);exit;
+        }else if(!preg_match($reg,$user_tel)){
+            echo json_encode(['font'=>'电话必须以1开头，不能超过11位','code'=>2]);exit;
+        }else{
+            $count = UserModel::where('user_tel',$user_tel)->count();
+            if($count>0){
+                echo json_encode(['font'=>'电话已存在','code'=>2]);exit;
+            }
+        }
         $code = rand(100000,999999);
         $body = "您的验证码为：".$code."，五分钟内有效。请勿泄露！!";
         $res  = sendSms($user_tel,$code);

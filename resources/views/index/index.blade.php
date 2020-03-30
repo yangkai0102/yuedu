@@ -102,10 +102,10 @@ type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html",
     $(function(){         //书架         CS.bookshelf.init(addToBookshelfAjaxUrl);
 //顶部导航条         CS.topNav.init(getUserInfoAjaxUrl, getUserNewMsgUrl);     });
 </script>
-@if(empty(Session::get('user')))
+@if(empty(Session('user')))
     <a href="/login"><h3>去登录</h3></a>
 @else
-    <h3>{{Session::get('user')}}</h3>
+    <h3>{{Session('user')}}</h3>
 @endif
 
     <div class="pageCenter"><div class="bookheader cf"><div class="logo
