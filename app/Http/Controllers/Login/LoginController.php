@@ -100,11 +100,6 @@ class LoginController extends Controller
         return view('index/index',['data'=>$res]);
     }
 
-    public function detail(){
-        
-        return view('/index/detail');
-    }
-
     public function sousuo(){
 
         $cate_id=request()->input('cate_id');
@@ -121,7 +116,7 @@ class LoginController extends Controller
             return redirect('/index/found');
         }else{
             BookModel::where('bname',$bname)->increment('book_incr',1);
-            return view('/index/detail',['data'=>$res]);
+            return view('/detail',['data'=>$res]);
             }
 
 
