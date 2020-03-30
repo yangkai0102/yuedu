@@ -8,10 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-<center>
-
-    <h1>未找到</h1>
-
-</center>
+    <h3>搜索的内容不存在</h3>
 </body>
 </html>

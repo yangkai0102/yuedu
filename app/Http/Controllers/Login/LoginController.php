@@ -102,27 +102,31 @@ class LoginController extends Controller
 
     public function detail(){
 
-        return view('index/detail');
+        return view('/index/detail');
     }
 
     public function sousuo(){
 
         $cate_id=request()->input('cate_id');
         $bname=request()->input('bname');
-        $where=[];
-        if($bname){
-            $where[] =['bname','like',"%$bname%"];
-        }
-        if($cate_id){
-            $where[] = ['cate_id','like',"%$cate_id%"];
+        $res2=BookModel::where('bname',$bname)->get();
+        if($res2){
+            return redirect('/index/found');
+        }else{
+            $where=[];
+            if($bname){
+                $where[] =['bname','like',"%$bname%"];
+            }
+            if($cate_id){
+                $where[] = ['cate_id','like',"%$cate_id%"];
+            }
+            $res=BookModel::where($where)->first();
+            if($res){
+                BookModel::where('bname',$bname)->increment('book_incr',1);
+                return redirect('/detail');
+            }
         }
 
-        $res=BookModel::where($where)->get();
-        if( $res){
-            return redirect('/detail');
-        }else{
-            return redirect('/found');
-        }
     }
 
     public function found(){
