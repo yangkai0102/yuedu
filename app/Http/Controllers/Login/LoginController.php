@@ -101,7 +101,7 @@ class LoginController extends Controller
     }
 
     public function detail(){
-        $res=BookModel::where($where)->first();
+        
         return view('/index/detail');
     }
 
