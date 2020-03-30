@@ -96,8 +96,9 @@ class LoginController extends Controller
         return view('/login/qrcode');
     }
     public function index(){
+        $data=BookModel::orderBy('books_incr','desc')->take(5)->get();
         $res=CateModel::get();
-        return view('index/index',['data'=>$res]);
+        return view('index/index',['data'=>$res,'res'=>$data]);
     }
 
     public function sousuo(){

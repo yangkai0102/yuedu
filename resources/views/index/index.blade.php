@@ -125,13 +125,12 @@ src="static/picture/txwxlogo.jpg"></a></div>
             </form>
 
             <div
-class="hotWords">热词： <a href="http://yunqi.qq.com/bk/gdyq/26835006.html"
-target="_blank">只想继承你的家产</a><a href="http://yunqi.qq.com/bk/gdyq/26550647.html"
-target="_blank">画春光</a><a href="http://yunqi.qq.com/bk/gdyq/24230535.html"
-target="_blank">农家小福女</a><a href="http://chuangshi.qq.com/bk/ds/13665778.html"
-target="_blank">三界红包群</a><a href="http://chuangshi.qq.com/bk/xx/20468795.html"
-target="_blank">飞剑问道</a><a href="http://chuangshi.qq.com/bk/xh/614782.html"
-target="_blank">全职法师</a></div></div><div id="headQrCode" class="headQrCode
+class="hotWords">热词：
+                @foreach($res as $k=>$v)
+                <a href="http://yunqi.qq.com/bk/gdyq/26835006.html"
+target="_blank">{{$v->bname}}</a>
+                    @endforeach
+            </div></div><div id="headQrCode" class="headQrCode
 fr"><p>下载QQ阅读</p><img width="80" height="80" src="static/picture/code03.png"><a
 href="javascript:" class="close"></a></div></div><script type="text/javascript"
 src="static/js/subnav.js"></script><script type="text/javascript">    var
