@@ -112,7 +112,7 @@ type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html",
 fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
 src="static/picture/txwxlogo.jpg"></a></div>
             <div style="margin-top: 55px;">
-                <form action="/index/sousuo" action="get">
+                <form action="/sousuo" action="get">
 
                         <select name="cate_id" id="">
                             <option value="">--请选择--</option>

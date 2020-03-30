@@ -27,7 +27,7 @@ Route::get('/login/qrcode','Login\LoginController@qrcode');
 
 Route::get('/','Login\LoginController@index');
 
-Route::get('/index/sousuo','Login\LoginController@sousuo');
+Route::get('/sousuo','Login\LoginController@sousuo');
 
 Route::get('/detail','Login\LoginController@detail');
 Route::get('/index/found','Login\LoginController@found');
