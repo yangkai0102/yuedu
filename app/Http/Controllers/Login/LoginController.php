@@ -121,9 +121,12 @@ class LoginController extends Controller
         if($res){
             return redirect('/detail');
         }else{
-            return redirect('index/404');
+            return redirect('/found');
         }
+    }
 
+    public function found(){
+        return view('/index/found');
     }
 
     public function reg(){
