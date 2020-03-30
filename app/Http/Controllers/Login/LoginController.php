@@ -117,7 +117,7 @@ class LoginController extends Controller
             $where[] = ['cate_id','like',"%$cate_id%"];
         }
         $res=BookModel::where($where)->first();
-        if($res){
+        if(!$res){
             return redirect('/index/found');
         }else{
             if($res){
