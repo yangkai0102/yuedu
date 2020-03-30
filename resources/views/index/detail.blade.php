@@ -167,7 +167,7 @@ href="http://yunqi.qq.com">首页</a>&gt;         <a
 href="http://yunqi.qq.com/bk/xdyq/">现代言情</a>&gt;         <a
 href="http://yunqi.qq.com/bk/xdyq/xx30028/">豪门世家</a>&gt;
 <strong><a href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-l.
-html">神医少奶奶又洗白了</a></strong><a class="quickLink"
+html"></a></strong><a class="quickLink"
 href="/public/downShortcut/bid/25857070.html">保存快捷方式</a></div><div
 class="num"></div><div class="info"><p class="f900">{{$data->detail}}</p></div><div class="tags">      作品标签：
 爽文、总裁、专情、女强、豪门</div><!--植树节活动 奇迹树 弹框 start--><div class="arborDay"
