@@ -116,10 +116,8 @@ class LoginController extends Controller
             return redirect('/index/found');
         }else{
             BookModel::where('bname',$bname)->increment('book_incr',1);
-            return view('/detail',['data'=>$res]);
+            return view('/index/detail',['data'=>$res]);
             }
-
-
     }
 
     public function found(){
