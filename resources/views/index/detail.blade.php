@@ -10,8 +10,7 @@
             a name="keywords" content="神医少奶奶又洗白了最新章节_神医少奶奶又洗白了txt下载_神医少奶奶又洗白了无弹框_神
 医少奶奶又洗白了独家首发_云起书院"/><!-- IE使用它支持的最高模式 --><meta http-equiv="X-UA-
 Compatible" content="IE=edge" /><meta name="baidu-site-verification"
-                                      content="3R33MUNLCM" /><title>神医少奶奶又洗白了最新章节_神医少奶奶又洗白了txt下载_神医少奶奶又洗白了无弹
-        框_神医少奶奶又洗白了独家首发_云起书院</title><link
+                                      content="3R33MUNLCM" /><title></title><link
             href="http://img1.chuangshi.qq.com/yunqi/p1/ico/bookqq.ico"
             type="image/x-icon" rel="shortcut icon"><link
             href="http://img1.chuangshi.qq.com/yunqi/p1/ico/bookqq.ico"
@@ -43,98 +42,22 @@ dom xss --><script type="text/javascript"
         //页面特定链接/按钮点击分析
         $.getScript("http://pingjs.qq.com/tcss.ping.js");         });
     </script></head><body><link rel="stylesheet" type="text/css"
-                                href="static/css/bookmain.css" /><!-- 顶部导航 --><div id="topNav"
-                                                                                   class="topNav"></div><!-- 顶部导航的模板 --><textarea id="topNavBarTpl"
-                                                                                                                                  style="display:none;"><div class="pageCenter"><!--顶部左边区块--><div
-                class="topLeft cf"><ul><li class="navNormal authority"><span><a
-                                class="topLink" href="http://book.qq.com"
-                                target="_blank">QQ阅读</a><b></b></span><div class="topSubList
-client"><a class="bookIntnet" href="http://www.qq.com" target="_blank"
-           onclick="pgvSendClick({hottag:'ISD.SHOW.INDEX.LINK02'});">腾讯网首页</a><a
-                                class="bookIntnet" href="https://yuedu.reader.qq.com/common/common/dow
-n/dist/index.html?actid=11822" target="_blank">客户端下载</a><!-- <a
-class="bookIos" href="http://book.qq.com/act/reader/index.html"
-target="_blank">IOS下载</a><a class="bookAndroid"
-href="http://book.qq.com/act/reader/index.html"
-target="_blank">安卓端下载</a> --></div></li></ul></div><!--登录前后容器--><div
+                                href="static/css/bookmain.css" /></li></ul></div><!--登录前后容器--><div
                 class="loginBox"><%if isLogin%><div class="login_after"><span
-                        class="navline">|</span><a class="exit" attr="click:ywlogout;"
-                                                   href="javascript:;">退出</a><a class="userName" href="http://account.boo
-k.qq.com/usercenter/index.html">欢迎您，<%=userInfo.Nickname ?
-userInfo.Nickname : ''%></a></div><%else%><div
-class="login_before"><span class="navline">|</span><!-- <a class="reg"
-target="_blank" href="http://zc.qq.com/chs/index.html?from=pt">注册</a>
---><a class="login" attr="click:openLoginPopup;"
-href="javascript:;">登录/注册</a></div><%/if%></div><!--顶部右边区块--><div
-class="topRight"><%if isLogin%><a class="myreader" href="http://accoun
-t.book.qq.com/userfavorite/index.html">我的书架<b></b></a><%else%><a
-class="myreader" href="javascript:;">最近阅读<b></b></a><%/if%><a
-class="user_center"
-href="http://account.book.qq.com">个人中心<b></b></a><a
-class="author_Zone"
-href="https://write.qq.com/?siteid=4">作家专区</a><span
-class="navline">|</span><a class="pay"
-href="http://account.book.qq.com/public/recharge.html"
-target="_blank">充值</a><!-- 我的书架的下拉列表 --><div class="bookrack"><%if
-isLogin%><p><span class="ccc">书架藏书：<%=userInfo.collectBookNum ?
-userInfo.collectBookNum : 0%>本</span></p><div class="nav_hover_list
-cf"><a href="http://account.book.qq.com/userfavorite/index.html?booksh
-elf_show=2">最近阅读</a><%if userInfo.bookshelfList &&
-userInfo.bookshelfList.length%><%each userInfo.bookshelfList as
-bookshelf i%><a class="a_nobg" href="http://account.book.qq.com/userfa
-vorite/index.html?Favoriteid=<%=bookshelf.groupId%>"><%=bookshelf.grou
-pName%></a><%/each%><%/if%></div><%else%><!-- 最近阅读列表 --><div
-class="nav_hover_list cf"><%if userInfo.recentReadList &&
-userInfo.recentReadList.length%><%each userInfo.recentReadList as book
-i%><a class="a_nobg" href="<%=book.bookUrl%>"><%=book.bookName%></a><%
-/each%><%/if%></div><%if !userInfo.recentReadList ||
-userInfo.recentReadList.length ===
-0%><p>最近没有阅读书</p><%/if%><%/if%></div><!-- 个人中心的下拉列表 --><div
-class="user_menu"><div class="nav_hover_list cf"><a
-href="http://account.book.qq.com/userfavorite/index.html">我的书架</a><a
-href="http://account.book.qq.com/usercenter/index.html">账户设置</a><a
-class="a_nobg"
-href="http://account.book.qq.com/usermoney/index.html">账务中心 </a><a
-class="a_nobg"
-href="https://write.qq.com/?siteid=4">作家专区</a></div></div><!--
-个人短信数量--><div id="pointy_msg"></div></div></div></textarea><script
-type="text/javascript">    var getUserInfoAjaxUrl =
-"/public/showhead.html"; //获取用户信息     var searchUrl =
-"/search/searchindex/type/p1/wd/p2.html";
-
-    $(function () {         //顶部导航条
-CS.topNav.init(getUserInfoAjaxUrl);         //各页面通用
-CS.common.init();         //初始化搜索框
-CS.searchInput.init(searchUrl, 'p_navtit_hover');     });
-</script><div class="wrap"><div class="pageCenter"><div
-class="mainnav"><a class="red2" href="http://yunqi.qq.com">首页</a><a
-href="/bk">书库</a><a href="/search/index.html">搜书</a><a
-href="/ranklist/index.html">排行榜</a><a class="dotted"
-href="http://yunqi.qq.com/bk/nxhyq">玄幻仙侠</a><a
-href="http://yunqi.qq.com/bk/ngdyq">古代言情</a><a
-href="http://yunqi.qq.com/bk/nxdyq">现代言情</a><a
-href="http://yunqi.qq.com/bk/nlmqc">浪漫青春</a><!--<a class="dotted"
-href="http://yunqi.qq.com/bk/xxqy">仙侠奇缘</a>--><a  class="dotted"
-href="http://yunqi.qq.com/bk/nkhly">悬疑</a><a
-href="http://yunqi.qq.com/bk/nkhly">科幻空间</a><a
-href="http://yunqi.qq.com/bk/yxjj">游戏竞技</a><a class="dotted red2"
-href="http://yunqi.qq.com/help/zzfl.html">作家福利</a><a
-href="http://yunqi.qq.com/help/zzqk.html">写作指引</a><a class="dotted"
-href="http://yunqi.qq.com/help/index.html">帮助</a></div><div
+                        class="navline">|</span>
+                    <div
 class="topbanner"><a href="http://chuangshi.qq.com/news/75383131.html"
 target="_blank" class=""><img
 src="static/picture/1f31677ffa7c47e2967fa82924da177f.gif" class=""
-alt="" title="" height="90" width="1002"></a></div></div><div
+alt="" title="" height="90" width="1002"></a></div><div
 class="mainbox"><!--书名及搜索--><div class="main1"><div class="title"><i
 class="grey"><img class="qqredaer_tit" src="static/picture/qqread.png"
-title="神医少奶奶又洗白了" width="25"                  height="25"/></i><a
-href="http://yunqi.qq.com/bk/xdyq/25857070.html"            title="神医少
-奶奶又洗白了官网"><b>&nbsp;神医少奶奶又洗白了</b></a><i>已完结</i><!--<span>|</span>--><!-
--<i>--><!----><!--<a href="/bookreader/all/25857070/1.html"
-title="神医少奶奶又洗白了全文阅读">全文阅读</a>--><!----><!--</i>--></div><div
+title="" width="25" height="25"/></i><a
+href="http://yunqi.qq.com/bk/xdyq/25857070.html" title=""><b>&nbsp;{{$data->bname}} </b></a>
+                    <div
 class="tag"><div class="y"><a href="javascript:void(0)"
-title="神医少奶奶又洗白了">签约作品</a></div><div class="y"><a
-href="javascript:void(0)" title="神医少奶奶又洗白了">付费作品</a></div></div><div
+title="">签约作品</a></div><div class="y"><a
+href="javascript:void(0)" title="">付费作品</a></div></div><div
 class="auther">        书号：25857070</div><div class="tablist"><ul><li
 class="this" ><a
 href="http://yunqi.qq.com/bk/xdyq/25857070.html">介绍</a></li><li  ><a
@@ -159,7 +82,7 @@ class="main2"><div class="left"><div class="cover"><!-- 限时免费的提示
 --><cite id="discountTag" style="display:none;"></cite><em
 id="discountTime" style="display:none;"></em><a
 href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-l.html"
-class="bookcover"><img src="static/picture/t5_25857070.jpg"
+class="bookcover"><img src="{{asset($data->img)}}"
 width="204" height="255" alt="神医少奶奶又洗白了"></a></div><div
 class="button1"><table width="216" height="100" border="0"><tr><td><a
 href="javascript:;" class="but01"
@@ -170,19 +93,11 @@ id="openRewardPopupBtn" href="javascript:;" class="but03
 btnDashang">打赏作者</a></td><td><a id="openRecommendPopupBtn"
 href="javascript:;" class="but04
 btnTuijian">投推荐票</a></td></tr></table></div><div class="title"><a
-href="http://yunqi.qq.com">首页</a>&gt;         <a
-href="http://yunqi.qq.com/bk/xdyq/">现代言情</a>&gt;         <a
-href="http://yunqi.qq.com/bk/xdyq/xx30028/">豪门世家</a>&gt;
+                                    href="http://yunqi.qq.com">首页</a><a>{{$data->status}}</a>
 <strong><a href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-l.
-html">神医少奶奶又洗白了</a></strong><a class="quickLink"
+html">{{$data->bname}}</a></strong><a class="quickLink"
 href="/public/downShortcut/bid/25857070.html">保存快捷方式</a></div><div
-class="num"></div><div class="info"><p class="f900">【【2019云起华语文学征文大赛】参
-赛作品】</p><p>作为第一杀手，雪云蓁穿书了，成了恶毒女。</p><p>看着已经被前身打断腿的男主，想到书中被男主杀死的结局，她欲哭无泪
-。</p><p>为了任务，她一个杀手使出浑身解数攻略男主。</p><p>可是谁知攻略过头了，男主黑化了，“蓁蓁，招惹了我，还想全身而退，嗯？
-”</p><p>他是权势滔天，芝兰玉树的帝少容魅夜，后来他的偏执他的占有欲也是为她。</p><p>“蓁蓁还要什么，心都给你，命都给你，好不好
-？”</p><p>“我……我只想回家！”</p><p>“蓁蓁，除非我死，否则你是不能离开我的！”</p><p>说好的协议结婚，约法三章的是他
-，可是入夜，是谁温柔又凶狠的宠她？</p></div><div class="tags">      作品标签：
-爽文、总裁、专情、女强、豪门</div><!--植树节活动 奇迹树 弹框 start--><div class="arborDay"
+class="num"></div><div class="info"><p class="f900">{{$data->detail}}</p></div><div class="tags"</div><!--植树节活动 奇迹树 弹框 start--><div class="arborDay"
 id="noveltreedetail" style="display:none;"></div><!-- 奇迹树 弹框 end
 --></div><div class="right"><div class="autherinfo"><a href="http://ac
 count.book.qq.com/bk/author/ADZQOAdrWWtcMQtoV2FTZgA%25252FWzg%25253D"

@@ -101,7 +101,7 @@ class LoginController extends Controller
     }
 
     public function detail(){
-
+        $res=BookModel::where($where)->first();
         return view('/index/detail');
     }
 
@@ -120,11 +120,10 @@ class LoginController extends Controller
         if(!$res){
             return redirect('/index/found');
         }else{
-            if($res){
-                BookModel::where('bname',$bname)->increment('book_incr',1);
-                return redirect('/detail');
+            BookModel::where('bname',$bname)->increment('book_incr',1);
+            return view('/index/detail',['data'=>$res]);
             }
-        }
+
 
     }
 
