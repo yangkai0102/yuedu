@@ -109,18 +109,17 @@ class LoginController extends Controller
 
         $cate_id=request()->input('cate_id');
         $bname=request()->input('bname');
-        $res2=BookModel::where('bname',$bname)->get();
-        if($res2){
+        $where=[];
+        if($bname){
+            $where[] =['bname','like',"%$bname%"];
+        }
+        if($cate_id){
+            $where[] = ['cate_id','like',"%$cate_id%"];
+        }
+        $res=BookModel::where($where)->first();
+        if($res){
             return redirect('/index/found');
         }else{
-            $where=[];
-            if($bname){
-                $where[] =['bname','like',"%$bname%"];
-            }
-            if($cate_id){
-                $where[] = ['cate_id','like',"%$cate_id%"];
-            }
-            $res=BookModel::where($where)->first();
             if($res){
                 BookModel::where('bname',$bname)->increment('book_incr',1);
                 return redirect('/detail');
