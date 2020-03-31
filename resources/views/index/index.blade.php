@@ -107,7 +107,7 @@ type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html",
 @else
     <h3>{{Session('user')}}</h3>
 @endif
-
+<a href="">作家专区</a>
     <div class="pageCenter"><div class="bookheader cf"><div class="logo
 fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
 src="static/picture/txwxlogo.jpg"></a></div>
@@ -214,7 +214,7 @@ href="http://chuangshi.qq.com/bk/wx/xx20011/"></a></p></div></div></li>
 rankHover tabList numList hidden">
                     @foreach($paihang as $k=>$v)
                         <li class="firstList"><div
-class="hoverHide"><span class="num3"></span><a target="_blank" hr
+class="hoverHide"><em>{{$v->book_incr}}</em><span class="num3"></span><a target="_blank" hr
 ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v->bname}}</a></div><div
 class="detailWrap"><span class="num3"></span><a target="_blank"
 href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg"><img

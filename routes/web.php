@@ -41,6 +41,9 @@ Route::post('/login/regdo','Login\LoginController@regdo');
 
 Route::post('/reg/span_tel','Login\LoginController@span_tel');
 
+Route::post('/index/yupiao','Index\IndexController@yuepiao');
+
+
 
 
 
