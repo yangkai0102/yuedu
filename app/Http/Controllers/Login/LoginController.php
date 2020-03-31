@@ -97,8 +97,10 @@ class LoginController extends Controller
     }
     public function index(){
         $data=BookModel::orderBy('book_incr','desc')->take(5)->get();
+        $data2=BookModel::orderBy('book_incr','desc')->take(10)->get();
+
         $res=CateModel::get();
-        return view('index/index',['data'=>$res,'res'=>$data]);
+        return view('index/index',['data'=>$res,'res'=>$data,'paihang'=>$data2]);
     }
 
     public function sousuo(){

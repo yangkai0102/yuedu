@@ -175,55 +175,51 @@ target="_blank">QQ阅读</a></p></div></div></div><!--频道推荐版块--><div
 class="channelWrap  mb20 cf"><div class="leftBox fl"><div class="channelTitle
 cf"><div class="recLink fr" style="max-width: 410px;max-height: 35px;overflow:
 hidden;"><a    href="http://chuangshi.qq.com/bk/xx/20327039.html"
-target="_blank">三寸人间</a><a    href="http://chuangshi.qq.com/bk/xh/14608738.html"
-target="_blank">圣墟</a><a    href="http://chuangshi.qq.com/bk/xh/24130981.html"
-target="_blank">明日之劫</a><a  class="nobr"
+target="_blank"> </a><a    href="http://chuangshi.qq.com/bk/xh/14608738.html"
+target="_blank"> </a><a    href="http://chuangshi.qq.com/bk/xh/24130981.html"
+target="_blank"> </a><a  class="nobr"
 href="http://chuangshi.qq.com/bk/xh/23861765.html"
-target="_blank">召唤梦魇</a></div><h3>原创男生<span><a href="http://chuangshi.qq.com"
+target="_blank"> </a></div><h3>原创男生<span><a href="http://chuangshi.qq.com"
 target="_blank">chuangshi.qq.com</a></span></h3></div><div class="recBookWrap
 cf"><div class="bigBook fl"><a
 href="http://chuangshi.qq.com/bk/qh/24180485.html" target="_blank"><img
-src="static/picture/t5_24180485.jpg" width="204" height="255"
+src="{{asset($data[0]->img)}}" width="204" height="255"
 target="_blank"></a><h4>《<a href="http://chuangshi.qq.com/bk/qh/24180485.html"
-target="_blank">天启预报</a>》                     <a
+target="_blank">{{$data[0]->baneme}}</a>》                     <a
 href="http://account.book.qq.com/bk/author/AD1QOgdqWWtcNQtqV2JTYwA3WzlQMwNg"
-target="_blank">风月</a></h4><p>“我想要挨一顿毒打……”</p></div><div class="otherBook
+target="_blank"></a></h4><p>{{$data[0]->detail}}</p></div><div class="otherBook
 fl"><ul><li><a href="http://chuangshi.qq.com/bk/ds/23451787.html"
-target="_blank"><img src="static/picture/t5_23451787.jpg" width="62"
+target="_blank"><img src="{{asset($data[1]->img)}}" width="62"
 height="78"></a><div class="otherBookInfo fl"><h4>《<a
 href="http://chuangshi.qq.com/bk/ds/23451787.html"
-target="_blank">学霸的黑科技时代</a>》</h4><p>作者：<a
+target="_blank">{{$data[1]->baneme}}</a>》</h4><p>作者：<a
 href="http://account.book.qq.com/bk/author/AD1QPwdqWWpcNgtqV2hTZQA8WzNQPwNg"
-target="_blank">咬文嚼纸</a></p><p
-class="intro">从国产操作系统到反重力技术，学霸无所不能</p></div></li><li><a
+target="_blank">{{$data[1]->author}}</a></p><p
+class="intro">{{$data[1]->detail}}</p></div></li><li><a
 href="http://chuangshi.qq.com/bk/ls/21526746.html" target="_blank"><img
-src="static/picture/t5_21526746.jpg" width="62" height="78"></a><div
+src="{{asset($data[2]->img)}}" width="62" height="78"></a><div
 class="otherBookInfo fl"><h4>《<a
 href="http://chuangshi.qq.com/bk/ls/21526746.html"
-target="_blank">覆汉</a>》</h4><p>作者：<a
+target="_blank">{{$data[2]->baneme}}</a>》</h4><p>作者：<a
 href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNgtqV2ZTZQA9WzVQNANh"
-target="_blank">榴弹怕水</a></p><p
-class="intro">从苟全性命于乱世，到夺取汉室天下！</p></div></li><li><a
+target="_blank">{{$data[2]->author}}</a></p><p
+class="intro">{{$data[2]->detail}}</p></div></li><li><a
 href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank"><img
-src="static/picture/t5_421661.jpg" width="62" height="78"></a><div
+src="{{asset($data[3]->img)}}" width="62" height="78"></a><div
 class="otherBookInfo fl"><h4>《<a
 href="http://chuangshi.qq.com/bk/xh/421661.html"
-target="_blank">武道霸主</a>》</h4><p>作者：<a
+target="_blank">{{$data[3]->baneme}}</a>》</h4><p>作者：<a
 href="http://account.book.qq.com/bk/author/ADdQOwduWW1cMgtiV2NTYwA7WzY%25253D"
-target="_blank">蜀狂人</a></p><p class="intro">武道霸主</p></div></li></ul><dl><dd
-class="fl"><p><a href="http://chuangshi.qq.com/bk/xh/xx20003gx3/"
-target="_blank">异世大陆</a><em>丨</em><a
-href="http://chuangshi.qq.com/bk/xh/614782.html" target="_blank"
-class="blue">全职法师</a></p><p>主修一系，怎如全系全通</p></dd><dd class="fl"><p><a
-href="http://chuangshi.qq.com/bk/xx/xx20018gx3/"
-target="_blank">神话修真</a><em>丨</em><a
-href="http://chuangshi.qq.com/bk/xx/20566688.html" target="_blank"
-class="blue">苍穹之上</a></p><p>千年苦修，只为立于苍穹上！</p></dd></dl></div></div></div><div
-class="rightBox fr"><div class="threeTabBox tabSwitch"><p>创世排行榜</p><div
+target="_blank">{{$data[3]->author}}</a></p><p class="intro">{{$data[3]->detail}}</p></div></li></ul></div></div></div>
+            <div
+class="rightBox fr"><div class="threeTabBox tabSwitch">
+                    <p>创世
+                    </p><div
 class="choiceBox"><span
 class="tabCur">人气榜<cite></cite></span><span>月票榜</span></div></div><!--男频榜--><div
 class="rankListWrap"><!--创世人气--><ul class="rankList rankHover numList
-tabList"><li class="firstList"><div class="hoverHide"><em>4340</em><span
+tabList">
+                        <li class="firstList"><div class="hoverHide"><em>4340</em><span
 class="num3">1</span><a target="_blank"
 href="http://chuangshi.qq.com/bk/wx/23240412.html">鸿渐于磐</a></div><div
 class="detailWrap"><span class="num3">1</span><a target="_blank"
@@ -233,196 +229,24 @@ class="detailInfo"><h4><a target="_blank"
 href="http://chuangshi.qq.com/bk/wx/23240412.html">鸿渐于磐</a></h4><p>作者：<a
 target="_blank" href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNwtvV2FTZ
 AA6WzNQPgNi">徐鸣辰</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/wx/xx20011/">传统武侠</a></p></div></div></li><li
-><div class="hoverHide"><em>2294</em><span class="num3">2</span><a
-target="_blank"
-href="http://chuangshi.qq.com/bk/ds/14139469.html">美女总裁的全能高手</a></div><div
-class="detailWrap"><span class="num3">2</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/ds/14139469.html"><img
-src="static/picture/s_14139469.jpg" width="55" height="74"
-alt="美女总裁的全能高手"/></a><div class="detailInfo"><h4><a target="_blank"
-href="http://chuangshi.qq.com/bk/ds/14139469.html">美女总裁的全能高手</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/ADdQPQdiWW5cMgtqV2hTZ
-wA2WzA%25253D">五杯咖啡</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/ds/xx20026/">异术超能</a></p></div></div></li><li
-><div class="hoverHide"><em>2032</em><span class="num3">3</span><a
-target="_blank"
-href="http://chuangshi.qq.com/bk/ls/20307022.html">唐残</a></div><div
-class="detailWrap"><span class="num3">3</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/ls/20307022.html"><img
-src="static/picture/s_20307022.jpg" width="55" height="74"  alt="唐残"/></a><div
-class="detailInfo"><h4><a target="_blank"
-href="http://chuangshi.qq.com/bk/ls/20307022.html">唐残</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/ADZQMwdsWW5cNQtqV2lTY
-gA2">猫疲</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/ls/xx20029/">架空历史</a></p></div></div></li><li
-><div class="hoverHide"><em>1755</em><span >4</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xx/26281320.html">鹿妖逐鹿</a></div><div
-class="detailWrap"><span >4</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xx/26281320.html"><img
-src="static/picture/s_26281320.jpg" width="55" height="74"  alt="鹿妖逐鹿"/></a><div
-class="detailInfo"><h4><a target="_blank" href="http://chuangshi.qq.com/bk/xx/26
-281320.html">鹿妖逐鹿</a></h4><p>作者：苍山大虫</p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/xx/xx20101/">古典仙侠</a></p></div></div></li><li
-><div class="hoverHide"><em>1718</em><span >5</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/648963.html">万古神帝</a></div><div
-class="detailWrap"><span >5</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/648963.html"><img
-src="static/picture/s_648963.jpg" width="55" height="74"  alt="万古神帝"/></a><div
-class="detailInfo"><h4><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/648963.html">万古神帝</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/ADBQOAdvWW1cMAtjV2ZTb
-AA%25252B">飞天鱼</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/xx20002/">东方玄幻</a></p></div></div></li><li
-><div class="hoverHide"><em>1632</em><span >6</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/ls/25476104.html">马谡别传</a></div><div
-class="detailWrap"><span >6</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/ls/25476104.html"><img
-src="static/picture/s_25476104.jpg" width="55" height="74"  alt="马谡别传"/></a><div
-class="detailInfo"><h4><a target="_blank"
-href="http://chuangshi.qq.com/bk/ls/25476104.html">马谡别传</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/AD1QPwduWWpcNgtvV2hTb
-AA%25252FWzZQMQNk">高瞻非</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/ls/xx20029/">架空历史</a></p></div></div></li><li
-><div class="hoverHide"><em>1532</em><span >7</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/21058239.html">伏天氏</a></div><div
-class="detailWrap"><span >7</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/21058239.html"><img
-src="static/picture/s_21058239.jpg" width="55" height="74"  alt="伏天氏"/></a><div
-class="detailInfo"><h4><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/21058239.html">伏天氏</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/ADZQOwdvWW9cNgtiV2BTY
-QA7">净无痕</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/xx20002/">东方玄幻</a></p></div></div></li><li
-><div class="hoverHide"><em>1430</em><span >8</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/20733915.html">九龙圣祖</a></div><div
-class="detailWrap"><span >8</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/20733915.html"><img
-src="static/picture/s_20733915.jpg" width="55" height="74"  alt="九龙圣祖"/></a><div
-class="detailInfo"><h4><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/20733915.html">九龙圣祖</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/ADJQPQdvWW5cNAtjV2JTb
-A%25253D%25253D">庞飞烟</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/xx20002/">东方玄幻</a></p></div></div></li><li
-><div class="hoverHide"><em>1407</em><span >9</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/29276081.html">开局无数神剑</a></div><div
-class="detailWrap"><span >9</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/xh/29276081.html"><img
-src="static/picture/s_29276081.jpg" width="55" height="74"
-alt="开局无数神剑"/></a><div class="detailInfo"><h4><a target="_blank" href="http://ch
-uangshi.qq.com/bk/xh/29276081.html">开局无数神剑</a></h4><p>作者：帝心似渊</p><p>分类：<a
-target="_blank"
-href="http://chuangshi.qq.com/bk/xh/xx20003/">异世大陆</a></p></div></div></li><li
-><div class="hoverHide"><em>1323</em><span >10</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/js/26617422.html">喋血年华</a></div><div
-class="detailWrap"><span >10</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/js/26617422.html"><img
-src="static/picture/s_26617422.jpg" width="55" height="74"  alt="喋血年华"/></a><div
-class="detailInfo"><h4><a target="_blank"
-href="http://chuangshi.qq.com/bk/js/26617422.html">喋血年华</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/ADRQMgdpWWNcNwtvV2ZTZ
-AA5WzY%25253D">虞猛</a></p><p>分类：<a target="_blank" href="http://chuangshi.qq.com/
-bk/js/xx20033/">战争幻想</a></p></div></div></li></ul><!--新书月票--><ul class="rankList
-rankHover tabList numList hidden"><li class="firstList"><div
+href="http://chuangshi.qq.com/bk/wx/xx20011/">传统武侠</a></p></div></div></li>
+
+                    </ul><!--新书月票--><ul class="rankList
+rankHover tabList numList hidden">
+                    @foreach($paihang as $k=>$v)
+                        <li class="firstList"><div
 class="hoverHide"><em>14183</em><span class="num3">1</span><a target="_blank" hr
-ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">万族之劫</a></div><div
+ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v->bname}}</a></div><div
 class="detailWrap"><span class="num3">1</span><a target="_blank"
 href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg"><img
-src="static/picture/s_28027842.jpg" width="55" height="74"  alt="万族之劫"/></a><div
+src="static/picture/s_28027842.jpg" width="55" height="74"  alt=""/></a><div
 class="detailInfo"><h4><a target="_blank" href="http://book.qq.com/intro.html?bi
-d=AGoEPF1gVjUAPVRsATUBZg">万族之劫</a></h4><p>作者：<a target="_blank" href="http://acc
-ount.book.qq.com/bk/author/AD1QOgdqWWtcMwtiV2dTbAA%25252BWzFQMwNn">老鹰吃小鸡</a></p>
+d=AGoEPF1gVjUAPVRsATUBZg">{{$v->bname}}</a></h4><p>作者：<a target="_blank" href="http://acc
+ount.book.qq.com/bk/author/AD1QOgdqWWtcMwtiV2dTbAA%25252BWzFQMwNn">{{$v->author}}</a></p>
 <p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/ds/xx20027/">恩怨情仇</a></p></div></div></li><li
-><div class="hoverHide"><em>12221</em><span class="num3">2</span><a
-target="_blank" href="http://book.qq.com/intro.html?bid=AGoEM11lVj4APFRjATcBbA">
-数风流人物</a></div><div class="detailWrap"><span class="num3">2</span><a
-target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEM11lVj4APFRjATcBbA"><img
-src="static/picture/s_27596768.jpg" width="55" height="74"
-alt="数风流人物"/></a><div class="detailInfo"><h4><a target="_blank" href="http://boo
-k.qq.com/intro.html?bid=AGoEM11lVj4APFRjATcBbA">数风流人物</a></h4><p>作者：瑞根</p><p>分类：
-<a target="_blank"
-href="http://chuangshi.qq.com/bk/ls/xx20029/">架空历史</a></p></div></div></li><li
-><div class="hoverHide"><em>10155</em><span class="num3">3</span><a
-target="_blank" href="http://book.qq.com/intro.html?bid=AGoEM11mVjUAO1RtATkBYw">
-从火影开始掌控时间</a></div><div class="detailWrap"><span class="num3">3</span><a
-target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEM11mVjUAO1RtATkBYw"><img
-src="static/picture/s_27621987.jpg" width="55" height="74"
-alt="从火影开始掌控时间"/></a><div class="detailInfo"><h4><a target="_blank" href="http:/
-/book.qq.com/intro.html?bid=AGoEM11mVjUAO1RtATkBYw">从火影开始掌控时间</a></h4><p>作者：夜南听风
-</p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/2cy/xx20061/">衍生同人</a></p></div></div></li><li
-><div class="hoverHide"><em>4862</em><span >4</span><a target="_blank" href="htt
-p://book.qq.com/intro.html?bid=AGoEM11jVjAAO1RlATkBYA">盖世双谐</a></div><div
-class="detailWrap"><span >4</span><a target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEM11jVjAAO1RlATkBYA"><img
-src="static/picture/s_27371184.jpg" width="55" height="74"  alt="盖世双谐"/></a><div
-class="detailInfo"><h4><a target="_blank" href="http://book.qq.com/intro.html?bi
-d=AGoEM11jVjAAO1RlATkBYA">盖世双谐</a></h4><p>作者：<a target="_blank" href="http://acc
-ount.book.qq.com/bk/author/AD1QOgdqWWpcNwtjV2VTZwA6WzlQNwNk">三天两觉</a></p><p>分类：<
-a target="_blank"
-href="http://chuangshi.qq.com/bk/wx/xx20012/">武侠幻想</a></p></div></div></li><li
-><div class="hoverHide"><em>3186</em><span >5</span><a target="_blank" href="htt
-p://book.qq.com/intro.html?bid=AGoEMl1jVjUAOlRsATYBbQ">重生创业时代</a></div><div
-class="detailWrap"><span >5</span><a target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEMl1jVjUAOlRsATYBbQ"><img
-src="static/picture/s_26320879.jpg" width="55" height="74"
-alt="重生创业时代"/></a><div class="detailInfo"><h4><a target="_blank" href="http://bo
-ok.qq.com/intro.html?bid=AGoEMl1jVjUAOlRsATYBbQ">重生创业时代</a></h4><p>作者：公子不歌</p><p
->分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/ds/xx20020/">都市生活</a></p></div></div></li><li
-><div class="hoverHide"><em>2628</em><span >6</span><a target="_blank" href="htt
-p://book.qq.com/intro.html?bid=AGoEM11lVjcAOVRiATgBbA">我在足坛疯狂刷钱</a></div><div
-class="detailWrap"><span >6</span><a target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEM11lVjcAOVRiATgBbA"><img
-src="static/picture/s_27503698.jpg" width="55" height="74"
-alt="我在足坛疯狂刷钱"/></a><div class="detailInfo"><h4><a target="_blank" href="http://
-book.qq.com/intro.html?bid=AGoEM11lVjcAOVRiATgBbA">我在足坛疯狂刷钱</a></h4><p>作者：王大布</p
-><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/ty/xx20057/">足球运动</a></p></div></div></li><li
-><div class="hoverHide"><em>2386</em><span >7</span><a target="_blank" href="htt
-p://book.qq.com/intro.html?bid=AGoEM11lVj4APFRlATMBbQ">我真不是仙二代</a></div><div
-class="detailWrap"><span >7</span><a target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEM11lVj4APFRlATMBbQ"><img
-src="static/picture/s_27596129.jpg" width="55" height="74"
-alt="我真不是仙二代"/></a><div class="detailInfo"><h4><a target="_blank" href="http://b
-ook.qq.com/intro.html?bid=AGoEM11lVj4APFRlATMBbQ">我真不是仙二代</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/AD1QPwduWWpcNgtqV2hTY
-AA5WzdQNgNn">明月地上霜</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/xx/xx20015/">修真文明</a></p></div></div></li><li
-><div class="hoverHide"><em>2302</em><span >8</span><a target="_blank" href="htt
-p://book.qq.com/intro.html?bid=AGoEM11jVjEAO1RtATYBZw">庶族无名</a></div><div
-class="detailWrap"><span >8</span><a target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEM11jVjEAO1RtATYBZw"><img
-src="static/picture/s_27361973.jpg" width="55" height="74"  alt="庶族无名"/></a><div
-class="detailInfo"><h4><a target="_blank" href="http://book.qq.com/intro.html?bi
-d=AGoEM11jVjEAO1RtATYBZw">庶族无名</a></h4><p>作者：<a target="_blank" href="http://acc
-ount.book.qq.com/bk/author/ADRQOAdoWWpcNAtuV2NTZAA2">王不过霸</a></p><p>分类：<a
-target="_blank"
-href="http://chuangshi.qq.com/bk/ls/xx20084/">秦汉三国</a></p></div></div></li><li
-><div class="hoverHide"><em>2269</em><span >9</span><a target="_blank" href="htt
-p://book.qq.com/intro.html?bid=AGoEM11lVjYAPlRlATkBYA">我是神话创世主</a></div><div
-class="detailWrap"><span >9</span><a target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEM11lVjYAPlRlATkBYA"><img
-src="static/picture/s_27514184.jpg" width="55" height="74"
-alt="我是神话创世主"/></a><div class="detailInfo"><h4><a target="_blank" href="http://b
-ook.qq.com/intro.html?bid=AGoEM11lVjYAPlRlATkBYA">我是神话创世主</a></h4><p>作者：<a
-target="_blank"
-href="http://account.book.qq.com/bk/author/ADBQMwdvWWpcMgtj">薪意</a></p><p>分类：<a
-target="_blank"
-href="http://chuangshi.qq.com/bk/xh/xx20002/">东方玄幻</a></p></div></div></li><li
-><div class="hoverHide"><em>2095</em><span >10</span><a target="_blank" href="ht
-tp://book.qq.com/intro.html?bid=AGoEPF1gVjQAPFRjATQBZA">我有一个熟练度面板</a></div><div
-class="detailWrap"><span >10</span><a target="_blank"
-href="http://book.qq.com/intro.html?bid=AGoEPF1gVjQAPFRjATQBZA"><img
-src="static/picture/s_28036750.jpg" width="55" height="74"
-alt="我有一个熟练度面板"/></a><div class="detailInfo"><h4><a target="_blank" href="http:/
-/book.qq.com/intro.html?bid=AGoEPF1gVjQAPFRjATQBZA">我有一个熟练度面板</a></h4><p>作者：<a
-target="_blank" href="http://account.book.qq.com/bk/author/ADdQMgdpWW1cMgtrV2RTY
-gA6WzU%25253D">行为金融</a></p><p>分类：<a target="_blank" href="http://chuangshi.qq.co
-m/bk/xh/xx20002/">东方玄幻</a></p></div></div></li></ul></div></div></div><!--
+href="http://chuangshi.qq.com/bk/ds/xx20027/">恩怨情仇</a></p></div></div></li>
+@endforeach
+                    </ul></div></div></div><!--
 原创女频--><div class="channelWrap mb20 cf"><div class="leftBox fl"><div
 class="channelTitle cf"><div class="recLink fr" style="max-width: 410px;max-
 height: 35px;overflow: hidden;"><a
