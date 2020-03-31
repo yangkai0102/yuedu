@@ -138,32 +138,20 @@ searchResultUrl = "/search/index/type/p1/wd/p2.html";
 
     $(function () {         CS.page.subNav.init(searchResultUrl);     });
 </script><!-- 主体 start--><!--焦点图--><div class="focusWrap"><div id="focusBox"
-class="slider"><div class="conbox"><div><a target="_blank"
-href="http://yunqi.qq.com/bk/ns/19818084.html"><img width="1000" height="360"
-src="static/picture/758e5004aa42f91d22f191122b6ae5ec.jpg"></a></div><div><a
-target="_blank"  href="http://yunqi.qq.com/bk/ns/25857070.html"><img
-width="1000" height="360"
-src="static/picture/b3a3520112e70678e4a638a0257c0ea4.jpg"></a></div><div><a
-target="_blank"  href="https://mall.jd.com/index-1000220931.html"><img
-width="1000" height="360"
-src="static/picture/862f865fa574e0bc492332ea145e869d.jpg"></a></div><div><a
-target="_blank"  href="https://activity.qidian.com/noah/857010561/index"><img
-width="1000" height="360"
-src="static/picture/2f1225fa88289f748ce248f01005483f.jpg"></a></div><div><a
-target="_blank"  href="http://yunqi.qq.com/bk/ns/25697936.html"><img
-width="1000" height="360"
-src="static/picture/ce88ef9edce3dd2a9a90effeaf4b3f75.jpg"></a></div><div><a
-target="_blank"  href="http://yunqi.qq.com/bk/ns/26615980.html"><img
-width="1000" height="360"
-src="static/picture/64238cc586f845f28438a0810cfefe12.jpg"></a></div></div><div
-class="switcher"><a target="_blank"
-href="http://yunqi.qq.com/bk/ns/19818084.html" class="cur"></a><a
-target="_blank"  href="http://yunqi.qq.com/bk/ns/25857070.html" ></a><a
-target="_blank"  href="https://mall.jd.com/index-1000220931.html" ></a><a
-target="_blank"  href="https://activity.qidian.com/noah/857010561/index" ></a><a
-target="_blank"  href="http://yunqi.qq.com/bk/ns/25697936.html" ></a><a
-target="_blank"  href="http://yunqi.qq.com/bk/ns/26615980.html"
-></a></div></div><!--悬浮窗--><div class="focusInfo"><div class="focusInfoBox"><h3
+class="slider"><div class="conbox">
+                    @foreach($data as $k=>$v)
+                    <div><a target="_blank"
+href="{{url('/index/list')}}"><img width="1000" height="360"
+src="{{asset($v->img)}}"></a></div>
+                </div>
+
+                <div
+class="switcher">
+                    <a target="_blank"
+href="{{url('/index/list')}}" class="cur"></a>
+                </div>
+                @endforeach
+            </div><!--悬浮窗--><div class="focusInfo"><div class="focusInfoBox"><h3
 class="newNotice">最新资讯</h3><ul><li>【<a
 href="http://chuangshi.qq.com/news/47338442.html" target="_blank">公告</a>】<a
 href="http://chuangshi.qq.com/news/47338442.html" target="_blank">有福利
@@ -188,29 +176,18 @@ target="_blank"></a><h4>《<a href="http://chuangshi.qq.com/bk/qh/24180485.html"
 target="_blank"></a>》                     <a
 href="http://account.book.qq.com/bk/author/AD1QOgdqWWtcNQtqV2JTYwA3WzlQMwNg"
 target="_blank"></a></h4><p></p></div><div class="otherBook
-fl"><ul><li><a href="http://chuangshi.qq.com/bk/ds/23451787.html"
-target="_blank"><img src="" width="62"
-height="78"></a><div class="otherBookInfo fl"><h4>《<a
+fl"><ul>
+                            @foreach($fenlei as $k=>$v)
+                            <li><a href="http://chuangshi.qq.com/bk/ds/23451787.html"
+target="_blank"><img src="{{asset($v->img)}}" width="62"
+height="78"></a><div class="otherBookInfo fl"><h4><a
 href="http://chuangshi.qq.com/bk/ds/23451787.html"
-target="_blank"></a>》</h4><p>作者：<a
+target="_blank">{{$v->bname}}</a></h4><p>作者：<a
 href="http://account.book.qq.com/bk/author/AD1QPwdqWWpcNgtqV2hTZQA8WzNQPwNg"
-target="_blank"></a></p><p
-class="intro"></p></div></li><li><a
-href="http://chuangshi.qq.com/bk/ls/21526746.html" target="_blank"><img
-src="static/picture/t5_21526746.jpg" width="62" height="78"></a><div
-class="otherBookInfo fl"><h4>《<a
-href="http://chuangshi.qq.com/bk/ls/21526746.html"
-target="_blank"></a>》</h4><p>作者：<a
-href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNgtqV2ZTZQA9WzVQNANh"
-target="_blank">榴弹怕水</a></p><p
-class="intro">从苟全性命于乱世，到夺取汉室天下！</p></div></li><li><a
-href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank"><img
-src="static/picture/t5_421661.jpg" width="62" height="78"></a><div
-class="otherBookInfo fl"><h4>《<a
-href="http://chuangshi.qq.com/bk/xh/421661.html"
-target="_blank">武道霸主</a>》</h4><p>作者：<a
-href="http://account.book.qq.com/bk/author/ADdQOwduWW1cMgtiV2NTYwA7WzY%25253D"
-target="_blank">蜀狂人</a></p><p class="intro">武道霸主</p></div></li></ul></div></div></div>
+target="_blank">{{$v->author}}</a></p><p
+class="intro"></p></div></li>
+                                @endforeach
+                        </ul></div></div></div>
             <div
 class="rightBox fr"><div class="threeTabBox tabSwitch">
                     <p>创世
@@ -219,18 +196,19 @@ class="choiceBox"><span
 class="tabCur">人气榜<cite></cite></span><span>月票榜</span></div></div><!--男频榜--><div
 class="rankListWrap"><!--创世人气--><ul class="rankList rankHover numList
 tabList">
+                        @foreach($paihang as $k=>$v)
                         <li class="firstList"><div class="hoverHide"><em>4340</em><span
 class="num3">1</span><a target="_blank"
-href="http://chuangshi.qq.com/bk/wx/23240412.html">鸿渐于磐</a></div><div
+href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v->bname}}</a></div><div
 class="detailWrap"><span class="num3">1</span><a target="_blank"
 href="http://chuangshi.qq.com/bk/wx/23240412.html"><img
-src="static/picture/s_23240412.jpg" width="55" height="74"  alt="鸿渐于磐"/></a><div
+src="static/picture/s_23240412.jpg" width="55" height="74"  alt=""/></a><div
 class="detailInfo"><h4><a target="_blank"
-href="http://chuangshi.qq.com/bk/wx/23240412.html">鸿渐于磐</a></h4><p>作者：<a
+href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v->bname}}</a></h4><p>作者：<a
 target="_blank" href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNwtvV2FTZ
-AA6WzNQPgNi">徐鸣辰</a></p><p>分类：<a target="_blank"
-href="http://chuangshi.qq.com/bk/wx/xx20011/">传统武侠</a></p></div></div></li>
-
+AA6WzNQPgNi">{{$v->author}}</a></p><p>分类：<a target="_blank"
+href="http://chuangshi.qq.com/bk/wx/xx20011/"></a></p></div></div></li>
+                        @endforeach
                     </ul><!--新书月票--><ul class="rankList
 rankHover tabList numList hidden">
                     @foreach($paihang as $k=>$v)

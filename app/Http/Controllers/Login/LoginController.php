@@ -22,10 +22,11 @@ class LoginController extends Controller
         echo $_GET['echostr'];
     }
 
+    //登录
     public function login(){
         return view('login/login');
     }
-
+//执行登录
     public function logindo(){
         $tel=request()->input('tel');
         $pwd=request()->input('password');
@@ -46,6 +47,7 @@ class LoginController extends Controller
         }
     }
 
+    //
     public function login2(){
         $code=$_GET['code'];
         $id="wx112dc5198a6a8695";
@@ -95,15 +97,19 @@ class LoginController extends Controller
     public function qrcode(){
         return view('/login/qrcode');
     }
+    //首页
     public function index(){
+        $data3=BookModel::orderBy('book_incr','desc')->take(3)->get();
+
         $data=BookModel::orderBy('book_incr','desc')->take(5)->get();
 
         $data2=BookModel::orderBy('book_incr','desc')->take(10)->get();
 
         $res=CateModel::get();
-        return view('index/index',['data'=>$res,'res'=>$data,'paihang'=>$data2]);
+        return view('index/index',['data'=>$res,'res'=>$data,'paihang'=>$data2,'fenlei'=>$data3]);
     }
 
+    //搜索
     public function sousuo(){
 
         $cate_id=request()->input('cate_id');
@@ -124,14 +130,17 @@ class LoginController extends Controller
             }
     }
 
+    //页面找不到
     public function found(){
         return view('/index/found');
     }
 
+    //注册
     public function reg(){
         return view('/login/reg');
     }
 
+    //发送验证码
     public function span_tel(){
         $user_tel=request()->input('user_tel');
         //短信验证
@@ -158,6 +167,7 @@ class LoginController extends Controller
         }
     }
 
+    //执行注册
     public function regdo(){
         $tel=request()->input('tel');
         $code=request()->input('code');
