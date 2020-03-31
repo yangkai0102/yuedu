@@ -10,11 +10,7 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function lists($id){
-        
-        $data=UserModel::where('id',$id)->first();
-        return view('/index/lists',['data'=>$data]);
-    }
+
 
     public function yuepiao(){
         $yuepiao=request()->input('yuepiao');

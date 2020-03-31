@@ -110,24 +110,31 @@ class LoginController extends Controller
     }
 
     //搜索
-    public function sousuo(){
+    public function sousuo($id){
+        if($id){
+            $data=BookModel::where('id',$id)->first();
+            return view('/index/lists',['data'=>$data]);
 
-        $cate_id=request()->input('cate_id');
-        $bname=request()->input('bname');
-        $where=[];
-        if($bname){
-            $where[] =['bname','like',"%$bname%"];
-        }
-        if($cate_id){
-            $where[] = ['cate_id','like',"%$cate_id%"];
-        }
-        $res=BookModel::where($where)->first();
-        if(!$res){
-            return redirect('/index/found');
         }else{
-            BookModel::where('bname',$bname)->increment('book_incr',1);
-            return view('/index/detail',['data'=>$res]);
+            $cate_id=request()->input('cate_id');
+            $bname=request()->input('bname');
+            $where=[];
+            if($bname){
+                $where[] =['bname','like',"%$bname%"];
             }
+            if($cate_id){
+                $where[] = ['cate_id','like',"%$cate_id%"];
+            }
+            $res=BookModel::where($where)->first();
+            if(!$res){
+                return redirect('/index/found');
+            }else{
+                BookModel::where('bname',$bname)->increment('book_incr',1);
+                return view('/index/detail',['data'=>$res]);
+            }
+        }
+
+
     }
 
     //页面找不到
