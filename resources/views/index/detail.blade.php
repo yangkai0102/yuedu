@@ -164,20 +164,18 @@ btnDashang">打赏作者</a></td><td>
 
                                 </form></td></tr></table></div><div class="title"><a
 href="http://yunqi.qq.com">首页</a>&gt;         <a
-href="http://yunqi.qq.com/bk/xdyq/">现代言情</a>&gt;         <a
-href="http://yunqi.qq.com/bk/xdyq/xx30028/">豪门世家</a>&gt;
+href="http://yunqi.qq.com/bk/xdyq/xx30028/"> </a>&gt;
 <strong><a href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-l.
 html">{{$data->bname}}</a></strong><a class="quickLink"
 href="/public/downShortcut/bid/25857070.html">保存快捷方式</a></div><div
-class="num"></div><div class="info"><p class="f900">{{$data->detail}}</p></div><div class="tags">      作品标签：
-爽文、总裁、专情、女强、豪门</div><!--植树节活动 奇迹树 弹框 start--><div class="arborDay"
+class="num"></div><div class="info"><p class="f900">{{$data->detail}}</p></div><div class="tags"></div><!--植树节活动 奇迹树 弹框 start--><div class="arborDay"
 id="noveltreedetail" style="display:none;"></div><!-- 奇迹树 弹框 end
 --></div><div class="right"><div class="autherinfo"><a href="http://ac
 count.book.qq.com/bk/author/ADZQOAdrWWtcMQtoV2FTZgA%25252FWzg%25253D"
 class="head"><img src="static/picture/default-avatar.png" width="48"
 height="48"></a><div class="au_name"><p id='textauthor'>作者：</p><p><a
 href="http://account.book.qq.com/bk/author/ADZQOAdrWWtcMQtoV2FTZgA%252
-52FWzg%25253D">凤元糖果</a></p></div><div class="shortintro"><p>希望书友们相互转告，
+52FWzg%25253D"><b style="color: #00FFFF">{{$data->author}}</b></a></p></div><div class="shortintro"><p>希望书友们相互转告，
 帮忙广告，你们的支持就是我的力量！求点击、求推荐、求书评，各种求！</p></div></div><!-- 奇迹树小图 start
 --><div class="treeLink" id="novelTreemin"><a href="javascript:"
 class="treebox level1" title="培养奇迹树"></a></div><!-- 奇迹树小图 end
@@ -185,7 +183,7 @@ class="treebox level1" title="培养奇迹树"></a></div><!-- 奇迹树小图 en
 class="middle"><!-- 页签 --><div id="newChapterTabBox" class="tab"><!--
 tms id 533 特殊标记 xiexinzhong--><h1 class="tab2left choice"
 style="width: 222px;"><a id="newChapterTab" listid="newChapterList"
-href="javascript:" title="神医少奶奶又洗白了最新章节">最新章节</a></h1><!-- tms id 533
+href="javascript:" title="">最新章节</a></h1><!-- tms id 533
 特殊标记 xiexinzhong--><div class="tabnext"><!--一键加群 chenjie--><!--一键加群
 chenjie--></div><!-- 分享按钮 --><div id="bdshare" class="bdshare_b"
 style="float:none; position:absolute; top:7px; right:2px;"><img
@@ -196,29 +194,21 @@ href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-r-586.html" c
 lass="green">番外完结</a></b><span>&nbsp;&nbsp;VIP&nbsp;&nbsp;</span>(更新时间
 ：2019-12-15 15:54:31)         </div><div class="chapternev"><a
 href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-r-586.html" r
-el="nofollow"><p>容吟眼中的光芒那么的璀璨明亮。</p><p>因为这样的目光，容吟整个人身上都仿佛多了动人的神彩。</p><
-p>看着这样的容吟，苏陌初眼睛也是跟着一亮。</p><p>其实容吟自己都没注意到，她身上的气息很容易感染到旁人的。</p><p>其实来到这个
-世界，每次看到苏陌初，想到苏陌初，容吟整个人都仿佛充满着无限的力量。</p><p>……</p><p>六年后</p><p>苏陌初如同历史上的那
-样，三元及第，成为最年轻的状元。</p><p>十八岁的苏陌初，俊美又尊贵，而且才华横溢，前途无量。</p><p>这时候的容吟也是十四岁了。<
-/p></a></div><div class="btnlist"><a
+el="nofollow"><p>
+
+                            </p></a></div><div class="btnlist"><a
 href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-r-586.html"
-alt="神医少奶奶又洗白了最新章节" class="read">阅读此章节</a><a
+alt="" class="read">阅读此章节</a><a
 href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-l.html"
-class="index" alt="神医少奶奶又洗白了,神医少奶奶又洗白了最新章节,目录">目录</a></div></div><!--
+class="index" alt="">目录</a></div></div><!--
 作品信息 --><div id="novelInfo" class="swishlist"
 style="display:none"></div></div><div class="right"><div
 id="authorBookBox" class="authorRec"><div class="otherbook"><div
 id="authorBookTabList" class="tab"><h1 class="tableft choice"
 style="width: 203px;"><a href="javascript:">作者其他作品</a></h1></div><div
-class="otherList" id="theAuthorBest"><ul><li><a
-href="http://yunqi.qq.com/bk/xdyq/18805211.html"
-class="green">帝国君少又黑化了</a></li><li><a
-href="http://yunqi.qq.com/bk/xdyq/22523064.html"
-class="green">少奶奶超甜超强的</a></li><li><a
-href="http://yunqi.qq.com/bk/xdyq/27512049.html"
-class="green">豪门权少又黑化了</a></li><li><a
-href="http://yunqi.qq.com/bk/xdyq/1000875951.html" class="green">豪门第一少
-奶奶</a></li></ul></div></div></div></div></div><script
+class="otherList" id="theAuthorBest"><ul><li>
+
+                                </li></ul></div></div></div></div></div><script
 type="text/javascript">    $(function () {         // 切换最新章节、作品信息的页签
 $('#newChapterTab, #novelInfoTab').on('click', function () {
 var $this = $(this);
