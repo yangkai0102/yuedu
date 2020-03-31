@@ -235,9 +235,9 @@ href="http://chuangshi.qq.com/bk/wx/xx20011/">传统武侠</a></p></div></div></
 rankHover tabList numList hidden">
                     @foreach($paihang as $k=>$v)
                         <li class="firstList"><div
-class="hoverHide"><em>14183</em><span class="num3">1</span><a target="_blank" hr
+class="hoverHide"><span class="num3"></span><a target="_blank" hr
 ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v->bname}}</a></div><div
-class="detailWrap"><span class="num3">1</span><a target="_blank"
+class="detailWrap"><span class="num3"></span><a target="_blank"
 href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg"><img
 src="static/picture/s_28027842.jpg" width="55" height="74"  alt=""/></a><div
 class="detailInfo"><h4><a target="_blank" href="http://book.qq.com/intro.html?bi
