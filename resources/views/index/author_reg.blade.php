@@ -25,7 +25,7 @@
                 </div>
                 <div class="apply-form-item">
                     <label class="afi-title" for="vipPwd">VIP管理密码</label>
-                    <input type="password" id="vipPwd" name="vipPwd" placeholder="请输入" class="ui-input">
+                    <input type="password" id="vipPwd" name="password" placeholder="请输入" class="ui-input">
                     <em class="icon-font j-eye eye-off"></em>
                     <em class="icon-font input-vertified">&#xe90b;</em>
                     <p class="input-caution">6-16位英文、数字或特殊字符组成，查看数据时需要输入</p>
