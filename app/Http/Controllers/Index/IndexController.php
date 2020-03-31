@@ -56,10 +56,14 @@ class IndexController extends Controller
             echo "请先去登录";
             header("refresh:2,url='/login'");
             die;
-        }else{
-            return redirect('/author_reg');
         }
     }
+
+    public function author_do2(){
+        return redirect('/author_reg');
+    }
+
+
 
     public function author_reg(){
         return view('/index/author_reg');

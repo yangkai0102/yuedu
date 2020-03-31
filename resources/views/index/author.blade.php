@@ -48,7 +48,12 @@
                     <h3>{{Session('user')}}</h3>
                 @endif
 
-                <a class="btn-primary" href="{{url('/author_do')}}" >成为作家</a>
+                    @if(empty(Session('user')))
+                        <a class="btn-primary" href="{{url('/author_do')}}" >成为作家</a>
+                    @else
+                        <a class="btn-primary" href="{{url('/author_do2')}}" >成为作家</a>
+                    @endif
+
             </div>
 
         </div>
