@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Index;
 
 use App\Http\Controllers\Controller;
+use App\Login\AuthorModel;
 use App\Login\BookModel;
 use App\Login\UserModel;
 use Illuminate\Http\Request;
@@ -67,6 +68,16 @@ class IndexController extends Controller
 
     public function author_reg(){
         return view('/index/author_reg');
+    }
+
+    public function author_reg2(){
+        $data=request()->input();
+        $res=AuthorModel::insert($data);
+        if($res){
+            echo "提交申请中。。。";
+            header("refresh:2,url='/login'");
+            die;
+        }
     }
 
 }
