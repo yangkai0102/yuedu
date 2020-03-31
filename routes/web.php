@@ -49,9 +49,14 @@ Route::get('/lists/{id}','Index\IndexController@lists');
 
 Route::get('/author_do','Index\IndexController@author_do');
 
-Route::post('/author_do2','Index\IndexController@author_do2');
+Route::get('/author_do2','Index\IndexController@author_do2');
 
 Route::get('/author_reg','Index\IndexController@author_reg');
+
+Route::post('/author_reg2','Index\IndexController@author_reg2');
+
+Route::get('/author_detail','Index\IndexController@author_detail');
+
 
 
 

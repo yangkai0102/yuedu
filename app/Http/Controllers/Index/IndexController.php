@@ -74,10 +74,12 @@ class IndexController extends Controller
         $data=request()->input();
         $res=AuthorModel::insert($data);
         if($res){
-            echo "提交申请中。。。";
-            header("refresh:2,url='/login'");
-            die;
+            return redirect('/author_detail');
         }
+    }
+
+    public function author_detail(){
+        return view('/index/author_detail');
     }
 
 }
