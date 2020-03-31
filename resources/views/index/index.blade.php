@@ -176,18 +176,29 @@ target="_blank"></a><h4>《<a href="http://chuangshi.qq.com/bk/qh/24180485.html"
 target="_blank"></a>》                     <a
 href="http://account.book.qq.com/bk/author/AD1QOgdqWWtcNQtqV2JTYwA3WzlQMwNg"
 target="_blank"></a></h4><p></p></div><div class="otherBook
-fl"><ul>
-                            @foreach($fenlei as $k=>$v)
-                            <li><a href="http://chuangshi.qq.com/bk/ds/23451787.html"
-target="_blank"><img src="{{asset($v->img)}}" width="62"
-height="78"></a><div class="otherBookInfo fl"><h4><a
+fl"><ul><li><a href="http://chuangshi.qq.com/bk/ds/23451787.html"
+target="_blank"><img src="" width="62"
+height="78"></a><div class="otherBookInfo fl"><h4>《<a
 href="http://chuangshi.qq.com/bk/ds/23451787.html"
-target="_blank">{{$v->bname}}</a></h4><p>作者：<a
+target="_blank"></a>》</h4><p>作者：<a
 href="http://account.book.qq.com/bk/author/AD1QPwdqWWpcNgtqV2hTZQA8WzNQPwNg"
-target="_blank">{{$v->author}}</a></p><p
-class="intro"></p></div></li>
-                                @endforeach
-                        </ul></div></div></div>
+target="_blank"></a></p><p
+class="intro"></p></div></li><li><a
+href="http://chuangshi.qq.com/bk/ls/21526746.html" target="_blank"><img
+src="static/picture/t5_21526746.jpg" width="62" height="78"></a><div
+class="otherBookInfo fl"><h4>《<a
+href="http://chuangshi.qq.com/bk/ls/21526746.html"
+target="_blank"></a>》</h4><p>作者：<a
+href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNgtqV2ZTZQA9WzVQNANh"
+target="_blank">榴弹怕水</a></p><p
+class="intro">从苟全性命于乱世，到夺取汉室天下！</p></div></li><li><a
+href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank"><img
+src="static/picture/t5_421661.jpg" width="62" height="78"></a><div
+class="otherBookInfo fl"><h4>《<a
+href="http://chuangshi.qq.com/bk/xh/421661.html"
+target="_blank">武道霸主</a>》</h4><p>作者：<a
+href="http://account.book.qq.com/bk/author/ADdQOwduWW1cMgtiV2NTYwA7WzY%25253D"
+target="_blank">蜀狂人</a></p><p class="intro">武道霸主</p></div></li></ul></div></div></div>
             <div
 class="rightBox fr"><div class="threeTabBox tabSwitch">
                     <p>创世
