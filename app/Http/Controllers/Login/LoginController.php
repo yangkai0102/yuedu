@@ -113,7 +113,7 @@ class LoginController extends Controller
     public function sousuo($id){
         if($id){
             $data=BookModel::where('id',$id)->first();
-            return view('/index/lists',['data'=>$data]);
+            return view('/index/detail',['data'=>$data]);
 
         }else{
             $cate_id=request()->input('cate_id');
