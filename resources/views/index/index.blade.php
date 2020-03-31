@@ -144,13 +144,13 @@ class="slider"><div class="conbox">
 href="{{url('/index/list')}}"><img width="1000" height="360"
 src="{{asset($v->img)}}"></a></div>
                 </div>
-
+                @endforeach
                 <div
 class="switcher">
                     <a target="_blank"
 href="{{url('/index/list')}}" class="cur"></a>
                 </div>
-                @endforeach
+
             </div><!--悬浮窗--><div class="focusInfo"><div class="focusInfoBox"><h3
 class="newNotice">最新资讯</h3><ul><li>【<a
 href="http://chuangshi.qq.com/news/47338442.html" target="_blank">公告</a>】<a
