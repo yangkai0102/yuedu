@@ -11,9 +11,9 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function lists($id){
-        echo
+        
         $data=UserModel::where('id',$id)->first();
-        return view('/lists',['data'=>$data]);
+        return view('/index/lists',['data'=>$data]);
     }
 
     public function yuepiao(){
@@ -79,6 +79,7 @@ class IndexController extends Controller
     }
 
     public function author_detail(){
+        AuthorModel::get();
         return view('/index/author_detail');
     }
 
