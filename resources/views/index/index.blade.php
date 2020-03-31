@@ -107,7 +107,7 @@ type="text/javascript">    var getUserInfoAjaxUrl = "/public/showhead.html",
 @else
     <h3>{{Session('user')}}</h3>
 @endif
-<a href="{{url('/index/author')}}">作家专区</a>
+<a href="{{url('/author')}}">作家专区</a>
     <div class="pageCenter"><div class="bookheader cf"><div class="logo
 fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！"
 src="static/picture/txwxlogo.jpg"></a></div>
