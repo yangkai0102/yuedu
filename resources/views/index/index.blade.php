@@ -181,7 +181,7 @@ fl"><ul>
                             @foreach($fenlei as $k=>$v)
                             <li><a
 href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank"><img
-src="static/picture/t5_421661.jpg" width="62" height="78"></a><div
+src="{{asset($v->img)}}" width="62" height="78"></a><div
 class="otherBookInfo fl"><h4>《<a
 href="http://chuangshi.qq.com/bk/xh/421661.html"
 target="_blank">{{$v->bname}}</a>》</h4><p>作者：<a
@@ -198,7 +198,7 @@ class="tabCur">人气榜<cite></cite></span><span>月票榜</span></div></div><!
 class="rankListWrap"><!--创世人气--><ul class="rankList rankHover numList
 tabList">
                         @foreach($paihang as $k=>$v)
-                        <li class="firstList"><div class="hoverHide"><em>4340</em><span
+                        <li class="firstList"><div class="hoverHide"><em>{{$v->book_incr}}</em><span
 class="num3">1</span><a target="_blank"
 href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v->bname}}</a></div><div
 class="detailWrap"><span class="num3">1</span><a target="_blank"
