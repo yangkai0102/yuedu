@@ -139,9 +139,9 @@ searchResultUrl = "/search/index/type/p1/wd/p2.html";
     $(function () {         CS.page.subNav.init(searchResultUrl);     });
 </script><!-- 主体 start--><!--焦点图--><div class="focusWrap"><div id="focusBox"
 class="slider"><div class="conbox">
-                    @foreach($data as $k=>$v)
+                    @foreach($fenlei as $k=>$v)
                     <div><a target="_blank"
-href="{{url('/index/list')}}"><img width="1000" height="360"
+href="{{url('/list/'.$v->id)}}"><img width="1000" height="360"
 src="{{asset($v->img)}}"></a></div>
                     @endforeach
                 </div>

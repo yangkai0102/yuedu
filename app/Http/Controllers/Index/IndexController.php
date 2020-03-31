@@ -9,9 +9,10 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function list(){
+    public function list($id){
         $id=request()->input();
-
+        $data=UserModel::where('id',$id)->first();
+        return view('/detail',['data'=>$data]);
     }
 
     public function yuepiao(){
@@ -45,5 +46,10 @@ class IndexController extends Controller
     //作家页面
     public function author(){
         return view('/index/author');
+    }
+
+    //作家注册
+    public function author_reg(){
+
     }
 }

@@ -42,8 +42,13 @@
         <div class="no-login">
 
             <div class="btn-wrap dib-wrap">
-                <a class="btn-secondary" href="/contentv2/public/login.html">登录</a>
-                <a class="btn-primary" href="/contentv2/public/login.html" >成为作家</a>
+                @if(empty(Session('user')))
+                    <a class="btn-secondary" href="/login">登录</a>
+                @else
+                    <h3>{{Session('user')}}</h3>
+                @endif
+
+                <a class="btn-primary" href="{{}}" >成为作家</a>
             </div>
 
         </div>

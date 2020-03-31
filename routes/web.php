@@ -45,6 +45,9 @@ Route::post('/index/yupiao','Index\IndexController@yuepiao');
 
 Route::get('/author','Index\IndexController@author');
 
+Route::get('/list/{id}','Index\IndexController@list');
+
+
 
 
 
