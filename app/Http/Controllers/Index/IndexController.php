@@ -42,7 +42,7 @@ class IndexController extends Controller
         return view('/index/pay');
     }
 
-    //充值页面
+    //作家页面
     public function author(){
         return view('/index/author');
     }
