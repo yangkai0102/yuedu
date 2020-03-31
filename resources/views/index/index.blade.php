@@ -143,8 +143,9 @@ class="slider"><div class="conbox">
                     <div><a target="_blank"
 href="{{url('/index/list')}}"><img width="1000" height="360"
 src="{{asset($v->img)}}"></a></div>
+                    @endforeach
                 </div>
-                @endforeach
+
                 <div
 class="switcher">
                     <a target="_blank"
@@ -172,33 +173,22 @@ target="_blank">chuangshi.qq.com</a></span></h3></div><div class="recBookWrap
 cf"><div class="bigBook fl"><a
 href="http://chuangshi.qq.com/bk/qh/24180485.html" target="_blank"><img
 src="" width="204" height="255"
-target="_blank"></a><h4>《<a href="http://chuangshi.qq.com/bk/qh/24180485.html"
-target="_blank"></a>》                     <a
+target="_blank"></a><h4><a href="http://chuangshi.qq.com/bk/qh/24180485.html"
+target="_blank"></a>                  <a
 href="http://account.book.qq.com/bk/author/AD1QOgdqWWtcNQtqV2JTYwA3WzlQMwNg"
 target="_blank"></a></h4><p></p></div><div class="otherBook
-fl"><ul><li><a href="http://chuangshi.qq.com/bk/ds/23451787.html"
-target="_blank"><img src="" width="62"
-height="78"></a><div class="otherBookInfo fl"><h4>《<a
-href="http://chuangshi.qq.com/bk/ds/23451787.html"
-target="_blank"></a>》</h4><p>作者：<a
-href="http://account.book.qq.com/bk/author/AD1QPwdqWWpcNgtqV2hTZQA8WzNQPwNg"
-target="_blank"></a></p><p
-class="intro"></p></div></li><li><a
-href="http://chuangshi.qq.com/bk/ls/21526746.html" target="_blank"><img
-src="static/picture/t5_21526746.jpg" width="62" height="78"></a><div
-class="otherBookInfo fl"><h4>《<a
-href="http://chuangshi.qq.com/bk/ls/21526746.html"
-target="_blank"></a>》</h4><p>作者：<a
-href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNgtqV2ZTZQA9WzVQNANh"
-target="_blank">榴弹怕水</a></p><p
-class="intro">从苟全性命于乱世，到夺取汉室天下！</p></div></li><li><a
+fl"><ul>
+                            @foreach($fenlei as $k=>$v)
+                            <li><a
 href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank"><img
 src="static/picture/t5_421661.jpg" width="62" height="78"></a><div
 class="otherBookInfo fl"><h4>《<a
 href="http://chuangshi.qq.com/bk/xh/421661.html"
-target="_blank">武道霸主</a>》</h4><p>作者：<a
+target="_blank">{{$v->bname}}</a>》</h4><p>作者：<a
 href="http://account.book.qq.com/bk/author/ADdQOwduWW1cMgtiV2NTYwA7WzY%25253D"
-target="_blank">蜀狂人</a></p><p class="intro">武道霸主</p></div></li></ul></div></div></div>
+target="_blank">{{$v->author}}</a></p><p class="intro"></p></div></li>
+                        @endforeach
+                        </ul></div></div></div>
             <div
 class="rightBox fr"><div class="threeTabBox tabSwitch">
                     <p>创世
@@ -213,7 +203,7 @@ class="num3">1</span><a target="_blank"
 href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v->bname}}</a></div><div
 class="detailWrap"><span class="num3">1</span><a target="_blank"
 href="http://chuangshi.qq.com/bk/wx/23240412.html"><img
-src="static/picture/s_23240412.jpg" width="55" height="74"  alt=""/></a><div
+src="{{asset($v->img)}}" width="55" height="74"  alt=""/></a><div
 class="detailInfo"><h4><a target="_blank"
 href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v->bname}}</a></h4><p>作者：<a
 target="_blank" href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNwtvV2FTZ
@@ -228,7 +218,7 @@ class="hoverHide"><span class="num3"></span><a target="_blank" hr
 ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v->bname}}</a></div><div
 class="detailWrap"><span class="num3"></span><a target="_blank"
 href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg"><img
-src="static/picture/s_28027842.jpg" width="55" height="74"  alt=""/></a><div
+src="{{asset($v->img)}}" width="55" height="74"  alt=""/></a><div
 class="detailInfo"><h4><a target="_blank" href="http://book.qq.com/intro.html?bi
 d=AGoEPF1gVjUAPVRsATUBZg">{{$v->bname}}</a></h4><p>作者：<a target="_blank" href="http://acc
 ount.book.qq.com/bk/author/AD1QOgdqWWtcMwtiV2dTbAA%25252BWzFQMwNn">{{$v->author}}</a></p>
@@ -236,8 +226,8 @@ ount.book.qq.com/bk/author/AD1QOgdqWWtcMwtiV2dTbAA%25252BWzFQMwNn">{{$v->author}
 href="http://chuangshi.qq.com/bk/ds/xx20027/">恩怨情仇</a></p></div></div>
                         </li>
                 @endforeach
-                    </ul></div></div></div><!--
-原创女频--><div class="channelWrap mb20 cf"><div class="leftBox fl"><div
+                    </ul></div></div></div>
+        <!--原创女频--><div class="channelWrap mb20 cf"><div class="leftBox fl"><div
 class="channelTitle cf"><div class="recLink fr" style="max-width: 410px;max-
 height: 35px;overflow: hidden;"><a
 href="http://yunqi.qq.com/bk/gdyq/27182063.html" target="_blank">农门福宝小媳妇</a><a
