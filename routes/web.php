@@ -27,7 +27,7 @@ Route::get('/login/qrcode','Login\LoginController@qrcode');
 
 Route::get('/','Login\LoginController@index');
 
-Route::get('/sousuo/{id}','Login\LoginController@sousuo');
+Route::get('/sousuo','Login\LoginController@sousuo');
 
 Route::get('/detail','Login\LoginController@detail');
 Route::get('/index/found','Login\LoginController@found');
@@ -45,7 +45,7 @@ Route::post('/index/yupiao','Index\IndexController@yuepiao');
 
 Route::get('/author','Index\IndexController@author');
 
-//Route::get('/lists/{id}','Index\IndexController@lists');
+Route::get('/lists/{id}','Index\IndexController@lists');
 
 Route::get('/author_do','Index\IndexController@author_do');
 
