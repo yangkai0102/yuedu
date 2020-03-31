@@ -21,7 +21,8 @@ class IndexController extends Controller
         $info=session('telInfo');
         if(empty($info)){
             echo "请先去登录";
-            redirect('/login');
+            header("refresh:2,url='/login'");
+            die;
         }else{
             $where=[
                 ['yuepiao'=>$yuepiao],
@@ -53,7 +54,8 @@ class IndexController extends Controller
         $info=session('telInfo');
         if(empty($info)){
             echo "请先去登录";
-            return redirect('/login');
+            header("refresh:2,url='/login'");
+            die;
         }else{
             return redirect('/author_reg');
         }
