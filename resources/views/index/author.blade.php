@@ -48,7 +48,7 @@
                     <h3>{{Session('user')}}</h3>
                 @endif
 
-                <a class="btn-primary" href="{{}}" >成为作家</a>
+                <a class="btn-primary" href="{{url('/author_do')}}" >成为作家</a>
             </div>
 
         </div>

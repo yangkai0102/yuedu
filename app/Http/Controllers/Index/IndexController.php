@@ -10,9 +10,9 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function lists($id){
-        $id=request()->input('id');
+        echo
         $data=UserModel::where('id',$id)->first();
-        return view('/detail',['data'=>$data]);
+        return view('/lists',['data'=>$data]);
     }
 
     public function yuepiao(){
@@ -49,7 +49,18 @@ class IndexController extends Controller
     }
 
     //作家注册
-    public function author_reg(){
-
+    public function author_do(){
+        $info=session('telInfo');
+        if(empty($info)){
+            echo "请先去登录";
+            return redirect('/login');
+        }else{
+            return redirect('/author_reg');
+        }
     }
+
+    public function author_reg(){
+        return view('/index/author_reg');
+    }
+
 }

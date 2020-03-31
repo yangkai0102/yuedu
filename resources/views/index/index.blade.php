@@ -141,7 +141,7 @@ searchResultUrl = "/search/index/type/p1/wd/p2.html";
 class="slider"><div class="conbox">
                     @foreach($fenlei as $k=>$v)
                     <div><a target="_blank"
-href="{{url('/list/'.$v->id)}}"><img width="1000" height="360"
+href="{{url('/lists/'.$v->id)}}"><img width="1000" height="360"
 src="{{asset($v->img)}}"></a></div>
                     @endforeach
                 </div>
@@ -149,7 +149,7 @@ src="{{asset($v->img)}}"></a></div>
                 <div
 class="switcher">
                     <a target="_blank"
-href="{{url('/index/list')}}" class="cur"></a>
+href="{{url('/list/'.$v->id)}}" class="cur"></a>
                 </div>
 
             </div><!--悬浮窗--><div class="focusInfo"><div class="focusInfoBox"><h3
