@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function list($id){
-        $id=request()->input();
+    public function lists($id){
+        $id=request()->input('id');
         $data=UserModel::where('id',$id)->first();
         return view('/detail',['data'=>$data]);
     }
