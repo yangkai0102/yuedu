@@ -43,7 +43,7 @@ Route::post('/login/regdo','Login\LoginController@regdo');
 
 Route::post('/reg/span_tel','Login\LoginController@span_tel');
 
-Route::post('/index/yupiao','Index\IndexController@yuepiao');
+Route::post('/index/yupiao/{id}','Index\IndexController@yuepiao');
 
 Route::get('/author','Index\IndexController@author');
 

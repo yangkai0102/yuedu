@@ -16,7 +16,7 @@ class IndexController extends Controller
         return view('/index/lists',['data'=>$data]);
     }
 
-    public function yuepiao(){
+    public function yuepiao($id){
         $yuepiao=request()->input('yuepiao');
 
         $info=session('telInfo');
