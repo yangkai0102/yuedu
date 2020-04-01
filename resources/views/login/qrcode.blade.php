@@ -10,7 +10,7 @@
 <body><center>
     <img src="/qrcode.png" alt="">
     <span>请扫描二维码</span>
-    <a href="{{url('/')}}">扫码之后点击登录</a>
+
 </center>
 </body>
 </html>

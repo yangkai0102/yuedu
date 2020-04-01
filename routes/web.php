@@ -29,6 +29,8 @@ Route::get('/','Login\LoginController@index');
 
 Route::get('/sousuo','Login\LoginController@sousuo');
 
+Route::post('/yuepiao','Index\IndexController@yuepiao');
+
 Route::get('/detail','Login\LoginController@detail');
 Route::get('/index/found','Login\LoginController@found');
 
@@ -56,6 +58,9 @@ Route::get('/author_reg','Index\IndexController@author_reg');
 Route::post('/author_reg2','Index\IndexController@author_reg2');
 
 Route::get('/author_detail','Index\IndexController@author_detail');
+
+Route::get('/pay','Index\IndexController@pay');
+
 
 
 

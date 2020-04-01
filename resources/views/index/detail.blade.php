@@ -159,7 +159,7 @@ href="http://yunqi.qq.com/bk/xdyq/AGoEMV1oVjIAPVRkATYBZA-l.html"
 alt=",最新章节,目录" class="but02">立即阅读</a></td></tr><tr><td><a
 id="openRewardPopupBtn" href="javascript:;" class="but03
 btnDashang">打赏作者</a></td><td>
-                                <form action="{{url('/index/yuepiao/'.$data->id)}}" method="post">
+                                <form action="{{url('/yuepiao/'.$data->id)}}" method="post">
 
                                     <input type="submit" name="yuepiao" value="点击投月票">
 

@@ -32,7 +32,9 @@ class IndexController extends Controller
             $res=UserModel::where($where)->first();
             if($res['yuepiao']==0){
                 echo "请去充值";
-                redirect('/index/pay');
+                echo "请先去登录";
+                header("refresh:2,url='/index/pay'");
+                die;
             }elseif($res['yuepiao']>0){
                 $res1=UserModel::where($where)->update(['yuepiao'=>$res['yuepiao']-1]);
                 $res2=BookModel::where()->update();
