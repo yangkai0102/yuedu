@@ -115,7 +115,7 @@ xss -->
                     </select> <input type="text" name="bname"> <input type="submit" value="搜索">
                 </form>
                 <div class="hotWords">
-                    热词： @foreach($res as $k=>$v) <a href="http://yunqi.qq.com/bk/gdyq/26835006.html" target="_blank">{{$v-&gt;bname}}</a> @endforeach
+                    热词： @foreach($res as $k=>$v) <a href="http://yunqi.qq.com/bk/gdyq/26835006.html" target="_blank">{{$v->bname}}</a> @endforeach
                 </div>
             </div>
             <div id="headQrCode" class="headQrCode fr">
