@@ -109,9 +109,11 @@ xss -->
                         <option value="">
                             --请选择--
                         </option>
+                        @foreach($data as $v)
                         <option value="{{$v->cate_id}}">
                             {{$v->bname}}
                         </option>
+                            @endforeach
                     </select> <input type="text" name="bname"> <input type="submit" value="搜索">
                 </form>
                 <div class="hotWords">
