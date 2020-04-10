@@ -18,7 +18,7 @@ class LoginMiddleware
         if($request->session()->has('users')){
             return $next($request);
         }else{
-            return redirect('login');
+            return redirect('scan');
         }
     }
 }
