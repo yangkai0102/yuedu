@@ -2,7 +2,7 @@
 <html  class="x-admin-sm">
 <head>
     <meta charset="UTF-8">
-    <title>QQ阅读登录</title>
+    <title>登录</title>
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
@@ -18,11 +18,9 @@
     <![endif]-->
 </head>
 <body class="login-bg">
-<center>
-    <a href="{{url('/index')}}"><h3>阅读页面</h3></a>
-</center>
+
 <div class="login layui-anim layui-anim-up">
-    <div class="message">QQ阅读登录</div>
+    <div class="message">账号密码登录</div>
     <div id="darkbannerwrap"></div>
 
     <form method="post" class="layui-form" action="{{url('login/logindo')}}">
@@ -32,8 +30,7 @@
         <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
         <hr class="hr15">
         <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
-        <center><a href="{{url('login/code')}}">扫码登录</a></center>
-        <a href="{{url('reg')}}">去注册</a>
+
         <hr class="hr20" >
     </form>
 </div>

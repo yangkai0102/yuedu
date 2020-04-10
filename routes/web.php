@@ -49,7 +49,14 @@ Route::post('/index/yupiao/{id}','Index\IndexController@yuepiao');
 
 
 Route::get('/author/index','Home\AuthorController@index')->middleware('checkuser');
-Route::get('login','Home\UserController@login');
+Route::get('login',function (){
+    return view('user.login');
+});
+Route::get('register',function (){
+    return view('user.register');
+});
+Route::get('scan','Home\UserController@scan');
+
 
 //系统后台
 Route::group(['prefix'=>'admin'],function (){

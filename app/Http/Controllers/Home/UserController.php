@@ -9,6 +9,6 @@ class UserController extends Controller
 {
     //
     public function login(){
-        echo 1;
+        return view('user.scan');
     }
 }
