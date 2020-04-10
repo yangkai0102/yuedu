@@ -215,16 +215,16 @@ xss -->
                         </li>
                         <li class="firstList">
                             <div class="hoverHide">
-                                <em>{{$v->book_incr}}</em><span class="num3">1</span><a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v-&gt;bname}}</a>
+                                <em>{{$v->book_incr}}</em><span class="num3">1</span><a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v->bname}}</a>
                             </div>
                             <div class="detailWrap">
-                                <span class="num3">1</span><a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html"><img src="{{asset($v-%3Eimg)}}" width="55" height="74" alt=""></a>
+                                <span class="num3">1</span><a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html"><img src="{{asset($v->img)}}" width="55" height="74" alt=""></a>
                                 <div class="detailInfo">
                                     <h4>
                                         <a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v->bname}}</a>
                                     </h4>
                                     <p>
-                                        作者：<a target="_blank" href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNwtvV2FTZAA6WzNQPgNi">{{$v-&gt;author}}</a>
+                                        作者：<a target="_blank" href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNwtvV2FTZAA6WzNQPgNi">{{$v->author}}</a>
                                     </p>
                                     <p>
                                         分类：<a target="_blank" href="http://chuangshi.qq.com/bk/wx/xx20011/"></a>
