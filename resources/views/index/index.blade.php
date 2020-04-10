@@ -135,7 +135,7 @@ xss -->
                 <div class="conbox">
                     @foreach($fenlei as $k=>$v)
                         <div>
-                            <a target="_blank" href="{{url('/lists/'.$v->id)}}"><img width="1000" height="360" src="{{asset($v-%3Eimg)}}"></a>
+                            <a target="_blank" href="{{url('/lists/'.$v->id)}}"><img width="1000" height="360" src="{{asset($v->img)}}"></a>
                         </div>@endforeach
                 </div>
                 <div class="switcher">
@@ -182,10 +182,10 @@ xss -->
                             <li style="list-style: none">@foreach($fenlei as $k=>$v)
                             </li>
                             <li>
-                                <a href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank"><img src="{{asset($v-%3Eimg)}}" width="62" height="78"></a>
+                                <a href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank"><img src="{{asset($v->img)}}" width="62" height="78"></a>
                                 <div class="otherBookInfo fl">
                                     <h4>
-                                        《<a href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank">{{$v-&gt;bname}}</a>》
+                                        《<a href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank">{{$v->bname}}</a>》
                                     </h4>
                                     <p>
                                         作者：<a href="http://account.book.qq.com/bk/author/ADdQOwduWW1cMgtiV2NTYwA7WzY%25253D" target="_blank">{{$v-&gt;author}}</a>
@@ -221,7 +221,7 @@ xss -->
                                 <span class="num3">1</span><a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html"><img src="{{asset($v-%3Eimg)}}" width="55" height="74" alt=""></a>
                                 <div class="detailInfo">
                                     <h4>
-                                        <a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v-&gt;bname}}</a>
+                                        <a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v->bname}}</a>
                                     </h4>
                                     <p>
                                         作者：<a target="_blank" href="http://account.book.qq.com/bk/author/AD1QOgdqWWhcNwtvV2FTZAA6WzNQPgNi">{{$v-&gt;author}}</a>
@@ -240,16 +240,16 @@ xss -->
                         </li>
                         <li class="firstList">
                             <div class="hoverHide">
-                                <em>{{$v->book_incr}}</em><a target="_blank" hr="" ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v-&gt;bname}}</a>
+                                <em>{{$v->book_incr}}</em><a target="_blank" hr="" ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v->bname}}</a>
                             </div>
                             <div class="detailWrap">
-                                <a target="_blank" href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg"><img src="{{asset($v-%3Eimg)}}" width="55" height="74" alt=""></a>
+                                <a target="_blank" href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg"><img src="{{asset($v->img)}}" width="55" height="74" alt=""></a>
                                 <div class="detailInfo">
                                     <h4>
-                                        <a target="_blank" href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v-&gt;bname}}</a>
+                                        <a target="_blank" href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v->bname}}</a>
                                     </h4>
                                     <p>
-                                        作者：<a target="_blank" href="http://account.book.qq.com/bk/author/AD1QOgdqWWtcMwtiV2dTbAA%25252BWzFQMwNn">{{$v-&gt;author}}</a>
+                                        作者：<a target="_blank" href="http://account.book.qq.com/bk/author/AD1QOgdqWWtcMwtiV2dTbAA%25252BWzFQMwNn">{{$v->author}}</a>
                                     </p>
                                     <p>
                                         分类：<a target="_blank" href="http://chuangshi.qq.com/bk/ds/xx20027/">恩怨情仇</a>
