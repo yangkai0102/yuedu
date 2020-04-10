@@ -61,11 +61,11 @@
 <div id="topNav" class="topNav">
     <div class="topRight">
         <div class="nav">
-
-            <a href="{{url('login')}}">登录</a>
-                &nbsp;
-            <a href="{{url('register')}}">注册</a>
-
+            @if(session('user'))
+                <a >您好：{{sessino('user')}}</a><a href="">退出</a>
+                @else
+                <a href="{{url('login')}}">登录</a><a href="{{url('register')}}">注册</a>
+                @endif
             <a href="{{url('/author/index')}}">作家专区</a>
             <a href="">充值</a>
             <a href="">个人中心</a>

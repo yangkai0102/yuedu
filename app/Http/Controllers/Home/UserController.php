@@ -93,7 +93,8 @@ class UserController extends Controller
         $data=['tel'=>$tel,'password'=>$password];
         $res=UserModel::insert($data);
         if($res){
-            return redirect('/login');
+            session(['user'=>$tel]);
+            echo "<script>alert('注册成功');location.href='/'</script>";
         }
 
     }
