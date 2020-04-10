@@ -15,10 +15,10 @@ class LoginMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if($request->session()->has('')){
+        if($request->session()->has('users')){
             return $next($request);
         }else{
-            return route('login');
+            return redirect('login');
         }
     }
 }

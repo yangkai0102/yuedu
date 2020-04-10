@@ -45,22 +45,11 @@ Route::post('/reg/span_tel','Login\LoginController@span_tel');
 
 Route::post('/index/yupiao/{id}','Index\IndexController@yuepiao');
 
-Route::get('/author','Index\IndexController@author');
 
-Route::get('/lists/{id}','Index\IndexController@lists');
 
-Route::get('/author_do','Index\IndexController@author_do');
 
-Route::get('/author_do2','Index\IndexController@author_do2');
-
-Route::get('/author_reg','Index\IndexController@author_reg');
-
-Route::post('/author_reg2','Index\IndexController@author_reg2');
-
-Route::get('/author_detail','Index\IndexController@author_detail');
-
-Route::get('/pay','Index\IndexController@pay');
-
+Route::get('/author/index','Home\AuthorController@index')->middleware('checkuser');
+Route::get('login','Home\UserController@login');
 
 //系统后台
 Route::group(['prefix'=>'admin'],function (){

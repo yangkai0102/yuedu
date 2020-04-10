@@ -66,7 +66,7 @@
                 &nbsp;
             <a href="{{url('reg')}}">注册</a>
             </span>
-            <span><a href="{{url('/author')}}">作家专区</a></span>
+            <span><a href="{{url('/author/index')}}">作家专区</a></span>
             <span><a href="">充值</a></span>
             <span><a href="">个人中心</a></span>
         </div>
