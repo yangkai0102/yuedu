@@ -24,8 +24,8 @@
     <div id="darkbannerwrap"></div>
     <div align="center">
         <img src="http://img1.chuangshi.qq.com/chuangshi/p1/code03.png" alt="">
-        <p><a href="">账号密码登录</a>
-            <a href="">免费注册</a></p>
+        <p><a href="{{url('login')}}">账号密码登录</a>
+            <a href="{{url('register')}}">免费注册</a></p>
     </div>
 </div>
 
