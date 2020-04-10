@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
-    public function login(){
+    public function scan(){
         return view('user.scan');
     }
 }
