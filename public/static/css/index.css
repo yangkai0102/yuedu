@@ -1,3 +1,6 @@
+.nav{
+    padding: 0 12px;
+}
 @charset "utf-8";.hotWords a:hover, .focusInfo ul li a:hover, .otherBookInfo p a:hover, .otherBook dd a:hover, .rightBox .rankListWrap .rankList li a:hover{color:#0773C0}.bookheader{padding:7px
 0}.logo{padding-top:21px;margin-right:76px}.focusWrap{position:relative;margin-bottom:22px}.slider{width:1000px;height:360px;position:relative;overflow:hidden}.conbox{position:absolute}.switcher{position:absolute;bottom:25px;left:290px;z-index:99}.switcher
 a{width:14px;height:14px;background:url(../images/circle.png) no-repeat;cursor:pointer;float:left;margin-right:8px}.switcher a.cur, .switcher a:hover{background:url(../images/circur.png) no-repeat}.focusInfo{position:absolute;top:12px;right:12px;width:300px;height:335px;background:#FFF;z-index:10;box-shadow:0 0 10px 0 #777}.cdkeyBox{position:static;height:328px;border:3px

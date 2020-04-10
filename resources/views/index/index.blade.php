@@ -59,11 +59,7 @@ xss -->
 </head>
 <body>
 <!-- 顶部导航 -->
-<div id="topNav" class="topNav"></div><!-- 顶部导航的模板 -->
-<textarea id="topNavBarTpl" style="display:none;">
-</textarea>
-<div class="pageCenter">
-    <!--顶部左边区块-->
+<div id="topNav" class="topNav">
     <div class="topRight">
         <div class="nav">
             <span>
@@ -80,8 +76,10 @@ xss -->
             <span><a href="">充值</a></span>
             <span><a href="">个人中心</a></span>
         </div>
-        </div>
-    </div><script type="text/javascript">
+    </div>
+</div><!-- 顶部导航的模板 -->
+
+<script type="text/javascript">
         var getUserInfoAjaxUrl = "/public/showhead.html",
             //获取用户信息         getUserNewMsgUrl =
             "http://account.book.qq.com/usermessage/getMessageNew.html",         webSite =
@@ -91,13 +89,7 @@ xss -->
 
         $(function(){         //书架         CS.bookshelf.init(addToBookshelfAjaxUrl);
         //顶部导航条         CS.topNav.init(getUserInfoAjaxUrl, getUserNewMsgUrl);     });
-    </script> @if(empty(Session('user')))
-        <h3>
-            <a href="/login">去登录</a>
-        </h3>@else
-        <h3>
-            {{Session('user')}}
-        </h3>@endif <a href="{{url('/author')}}">作家专区</a>
+    </script>
     <div class="pageCenter">
         <div class="bookheader cf">
             <div class="logo fl">
