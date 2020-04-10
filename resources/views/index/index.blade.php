@@ -109,13 +109,13 @@ xss -->
                         <option value="">
                             --请选择--
                         </option>
-                        <option value="{{$v-&gt;cate_id}}">
-                            {{$v-&gt;bname}}
+                        <option value="{{$v->cate_id}}">
+                            {{$v->bname}}
                         </option>
                     </select> <input type="text" name="bname"> <input type="submit" value="搜索">
                 </form>
                 <div class="hotWords">
-                    热词： @foreach($res as $k=&gt;$v) <a href="http://yunqi.qq.com/bk/gdyq/26835006.html" target="_blank">{{$v-&gt;bname}}</a> @endforeach
+                    热词： @foreach($res as $k=>$v) <a href="http://yunqi.qq.com/bk/gdyq/26835006.html" target="_blank">{{$v-&gt;bname}}</a> @endforeach
                 </div>
             </div>
             <div id="headQrCode" class="headQrCode fr">
@@ -133,13 +133,13 @@ xss -->
         <div class="focusWrap">
             <div id="focusBox" class="slider">
                 <div class="conbox">
-                    @foreach($fenlei as $k=&gt;$v)
+                    @foreach($fenlei as $k=>$v)
                         <div>
-                            <a target="_blank" href="{{url('/lists/'.$v-%3Eid)}}"><img width="1000" height="360" src="{{asset($v-%3Eimg)}}"></a>
+                            <a target="_blank" href="{{url('/lists/'.$v->id)}}"><img width="1000" height="360" src="{{asset($v-%3Eimg)}}"></a>
                         </div>@endforeach
                 </div>
                 <div class="switcher">
-                    <a target="_blank" href="{{url('/list/'.$v-%3Eid)}}" class="cur"></a>
+                    <a target="_blank" href="{{url('/list/'.$v->id)}}" class="cur"></a>
                 </div>
             </div><!--悬浮窗-->
             <div class="focusInfo">
@@ -179,7 +179,7 @@ xss -->
                     </div>
                     <div class="otherBook fl">
                         <ul>
-                            <li style="list-style: none">@foreach($fenlei as $k=&gt;$v)
+                            <li style="list-style: none">@foreach($fenlei as $k=>$v)
                             </li>
                             <li>
                                 <a href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank"><img src="{{asset($v-%3Eimg)}}" width="62" height="78"></a>
@@ -211,11 +211,11 @@ xss -->
                 <div class="rankListWrap">
                     <!--创世人气-->
                     <ul class="rankList rankHover numList tabList">
-                        <li style="list-style: none">@foreach($paihang as $k=&gt;$v)
+                        <li style="list-style: none">@foreach($paihang as $k=>$v)
                         </li>
                         <li class="firstList">
                             <div class="hoverHide">
-                                <em>{{$v-&gt;book_incr}}</em><span class="num3">1</span><a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v-&gt;bname}}</a>
+                                <em>{{$v->book_incr}}</em><span class="num3">1</span><a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html">{{$v-&gt;bname}}</a>
                             </div>
                             <div class="detailWrap">
                                 <span class="num3">1</span><a target="_blank" href="http://chuangshi.qq.com/bk/wx/23240412.html"><img src="{{asset($v-%3Eimg)}}" width="55" height="74" alt=""></a>
@@ -236,11 +236,11 @@ xss -->
                         </li>
                     </ul><!--新书月票-->
                     <ul class="rankList rankHover tabList numList hidden">
-                        <li style="list-style: none">@foreach($paihang as $k=&gt;$v)
+                        <li style="list-style: none">@foreach($paihang as $k=>$v)
                         </li>
                         <li class="firstList">
                             <div class="hoverHide">
-                                <em>{{$v-&gt;book_incr}}</em><a target="_blank" hr="" ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v-&gt;bname}}</a>
+                                <em>{{$v->book_incr}}</em><a target="_blank" hr="" ef="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg">{{$v-&gt;bname}}</a>
                             </div>
                             <div class="detailWrap">
                                 <a target="_blank" href="http://book.qq.com/intro.html?bid=AGoEPF1gVjUAPVRsATUBZg"><img src="{{asset($v-%3Eimg)}}" width="55" height="74" alt=""></a>
