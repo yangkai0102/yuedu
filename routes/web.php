@@ -55,6 +55,8 @@ Route::get('login',function (){
 Route::get('register',function (){
     return view('user.register');
 });
+Route::post('/logindo','Home\UserController@logindo');
+Route::post('/doregister','Home\UserController@doregister');
 Route::get('scan','Home\UserController@scan');
 
 

@@ -1,5 +1,8 @@
-.nav span{
+.nav a{
+    width: 50px;
+    height: auto;
     padding: 0 12px;
+    margin: 0 12px;
 }
 @charset "utf-8";.hotWords a:hover, .focusInfo ul li a:hover, .otherBookInfo p a:hover, .otherBook dd a:hover, .rightBox .rankListWrap .rankList li a:hover{color:#0773C0}.bookheader{padding:7px
 0}.logo{padding-top:21px;margin-right:76px}.focusWrap{position:relative;margin-bottom:22px}.slider{width:1000px;height:360px;position:relative;overflow:hidden}.conbox{position:absolute}.switcher{position:absolute;bottom:25px;left:290px;z-index:99}.switcher

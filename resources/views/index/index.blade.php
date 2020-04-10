@@ -61,14 +61,14 @@
 <div id="topNav" class="topNav">
     <div class="topRight">
         <div class="nav">
-            <span>
+
             <a href="/login">登录</a>
                 &nbsp;
             <a href="{{url('reg')}}">注册</a>
-            </span>
-            <span><a href="{{url('/author/index')}}">作家专区</a></span>
-            <span><a href="">充值</a></span>
-            <span><a href="">个人中心</a></span>
+
+            <a href="{{url('/author/index')}}">作家专区</a>
+            <a href="">充值</a>
+            <a href="">个人中心</a>
         </div>
     </div>
 </div><!-- 顶部导航的模板 -->
