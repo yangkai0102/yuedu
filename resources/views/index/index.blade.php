@@ -62,7 +62,7 @@
     <div class="topRight">
         <div class="nav">
             @if(session('user'))
-                <a >您好：{{sessino('user')}}</a><a href="">退出</a>
+                <a >您好：{{session('user')}}</a><a href="">退出</a>
                 @else
                 <a href="{{url('login')}}">登录</a><a href="{{url('register')}}">注册</a>
                 @endif
