@@ -188,7 +188,7 @@ xss -->
                                         《<a href="http://chuangshi.qq.com/bk/xh/421661.html" target="_blank">{{$v->bname}}</a>》
                                     </h4>
                                     <p>
-                                        作者：<a href="http://account.book.qq.com/bk/author/ADdQOwduWW1cMgtiV2NTYwA7WzY%25253D" target="_blank">{{$v-&gt;author}}</a>
+                                        作者：<a href="http://account.book.qq.com/bk/author/ADdQOwduWW1cMgtiV2NTYwA7WzY%25253D" target="_blank">{{$v->author}}</a>
                                     </p>
                                     <p class="intro"></p>
                                 </div>
