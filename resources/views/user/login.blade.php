@@ -23,7 +23,7 @@
     <div class="message">账号密码登录</div>
     <div id="darkbannerwrap"></div>
 
-    <form method="post" class="layui-form" action="{{url('user/logindo')}}">
+    <form method="post" class="layui-form" action="{{url('/logindo')}}">
 
         <input name="tel" placeholder="手机号"  type="text" lay-verify="required" class="layui-input" >
         <hr class="hr15">
