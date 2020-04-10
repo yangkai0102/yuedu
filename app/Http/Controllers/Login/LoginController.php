@@ -105,7 +105,6 @@ class LoginController extends Controller
 
         $data2=BookModel::orderBy('book_incr','desc')->take(10)->get();
 
-        $data2=BookModel::orderBy('book_incr','desc')->take(10)->get();
 
         $res=CateModel::get();
         return view('index/index',['data'=>$res,'res'=>$data,'paihang'=>$data2,'fenlei'=>$data3]);
