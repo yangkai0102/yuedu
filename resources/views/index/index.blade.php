@@ -62,9 +62,9 @@
     <div class="topRight">
         <div class="nav">
 
-            <a href="/login">登录</a>
+            <a href="{{url('login')}}">登录</a>
                 &nbsp;
-            <a href="{{url('reg')}}">注册</a>
+            <a href="{{url('register')}}">注册</a>
 
             <a href="{{url('/author/index')}}">作家专区</a>
             <a href="">充值</a>
