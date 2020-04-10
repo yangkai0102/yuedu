@@ -62,7 +62,7 @@
     <div class="topRight">
         <div class="nav">
             <span>
-            <a href="/login">去登录</a>
+            <a href="/login">登录</a>
                 &nbsp;
             <a href="{{url('reg')}}">注册</a>
             </span>
