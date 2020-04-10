@@ -17,27 +17,24 @@
             <form id="applyForm" class="apply-form" action="{{url('/author_reg2')}}" method="post">
                 <!--             <div class="apply-form-item"><lable class="afi-title"><strong class="form-item-txt">基础信息</strong></lable></div> -->
                 <div class="apply-form-item">
-                    <label class="afi-title" for="authorName">笔名</label>
+                    <label class="afi-title" for="authorName">昵称</label>
                     <input id="authorName" name="authorname" type="text" placeholder="请输入" class="ui-input">
                     <em class="icon-font input-vertified">&#xe90b;</em>
-                    <p class="input-caution">2-6个汉字、数字或英文字母组成，笔名申请后不可变更</p>
-                    <p class="input-error"></p>
+
                 </div>
                 <div class="apply-form-item">
-                    <label class="afi-title" for="vipPwd">VIP管理密码</label>
-                    <input type="password" id="vipPwd" name="password" placeholder="请输入" class="ui-input">
+                    <label class="afi-title" for="vipPwd">邮箱</label>
+                    <input type="email" id="vipPwd" name="email" placeholder="请输入" class="ui-input">
                     <em class="icon-font j-eye eye-off"></em>
                     <em class="icon-font input-vertified">&#xe90b;</em>
-                    <p class="input-caution">6-16位英文、数字或特殊字符组成，查看数据时需要输入</p>
-                    <p class="input-error"></p>
+
                 </div>
 
                 <div class="apply-form-item">
                     <label class="afi-title" for="authorEmail">身份证号</label>
-                    <input name="shenfen" id="authorEmail" placeholder="name@sample.com" class="ui-input">
+                    <input name="shenfen" id="authorEmail" placeholder="" class="ui-input">
                     <em class="icon-font input-vertified">&#xe90b;</em>
-                    <p class="input-caution">14位数字</p>
-                    <p class="input-error"></p>
+
                 </div>
 
                 <div class="apply-form-item">

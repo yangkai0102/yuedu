@@ -37,7 +37,7 @@
                             <cite class="icon whiteSj"></cite>
                             <dd class="userInfo hidden">
                                 <!-- 增加身份标识"ico-level",silver为白金作家，dashen为大神作家 -->
-                                <p class="name" title="星幻丶">星幻丶
+                                <p class="name" title="星幻丶">
 
                                 </p>
                                 <p class="level">
@@ -289,17 +289,6 @@
             <!-- end 选择作品分类 弹窗 -->
         </div>
 
-        <script type="text/javascript" src="https://sta1.write.qq.com/writer/0331171104/js/merge/contentv2_novelList.js"></script><script type="text/javascript">
-            $(function () {
-                var imgUrl = "https://img1.write.qq.com/writer/p1";
-                var artidx = "0";
-                var selectid = "0";
-                var articlename = "";
-                var listpagetype="";
-
-                CS.page.bookNovels.novelList.init(imgUrl,artidx,articlename,selectid,listpagetype);
-            });
-        </script>
 
         <img id="requestLoadingTip" class="loadImg" style="display:none;" src="https://img1.write.qq.com/writer/p1/contentv2/loading.gif">
     </div>

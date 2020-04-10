@@ -62,6 +62,17 @@ Route::get('/author_detail','Index\IndexController@author_detail');
 Route::get('/pay','Index\IndexController@pay');
 
 
+//系统后台
+Route::group(['prefix'=>'admin'],function (){
+   route::get('index',"Admin\IndexController@index");
+   route::get('examauthor',"Admin\IndexController@examauthor");
+    route::get('doexam',"Admin\IndexController@doexam");
+    route::get('welcome',function (){
+      return view('admin.welcome');
+   });
+});
+
+
 
 
 
