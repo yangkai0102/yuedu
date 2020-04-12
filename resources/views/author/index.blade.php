@@ -77,14 +77,14 @@
     <div id="side-nav">
         <ul id="nav">
             <li>
-                <a onclick="xadmin.add_tab('我的作品','{{url('admin/lists')}}')">
+                <a onclick="xadmin.add_tab('我的作品','{{url('author/lists')}}')">
                     <i class="iconfont">&#xe6a7;</i>
                     <cite>我的作品</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
             </li>
             <li>
-                <a onclick="xadmin.add_tab('发布作品','{{url('admin/new')}}')">
+                <a onclick="xadmin.add_tab('发布作品','{{url('author/new')}}')">
                     <i class="iconfont">&#xe6a7;</i>
                     <cite>发布作品</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
