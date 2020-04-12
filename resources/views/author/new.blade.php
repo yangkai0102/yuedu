@@ -58,7 +58,7 @@
                     <span class="x-red">*</span>封面
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="" name="pass" required=""
+                    <input type="text" id="" name="img" required=""
                             class="layui-input">
                 </div>
 
