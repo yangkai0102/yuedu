@@ -25,10 +25,9 @@ class IndexController extends Controller
     //审核作者通过
     public function doexam(){
             $id=request()->input('id');
-            $res1=AuthorModel::where('username',$id)->update(['status',1]);
-            $res2=UserModel::where('tel',$id)->update(['status',1]);
-            dump($res2);
-            dd($res1);
+            $res1=AuthorModel::where('username',$id)->update(['status'=>1]);
+            $res2=UserModel::where('tel',$id)->update(['status'=>1]);
+            
             if($res1&&$res2){
                 return 1;
             }else{
