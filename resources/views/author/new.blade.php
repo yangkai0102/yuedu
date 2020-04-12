@@ -124,7 +124,7 @@
                             layer.alert(res, {
                                 icon: 6
                             }),
-                                location.href='/';
+                                location.href='/author/lists';
                         }
                     })
 
