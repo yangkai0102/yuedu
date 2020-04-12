@@ -17,7 +17,7 @@ class Author
     public function handle($request, Closure $next)
     {
         if($request->session()->has('user')){
-            $author=session('user');d'd'
+            $author=session('user');
 
             $info=UserModel::where('tel',$author)->first()->toArray();
             $status=$info['status'];
