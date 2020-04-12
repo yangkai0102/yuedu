@@ -40,7 +40,7 @@
                 <div class="apply-form-item">
 
                     <div class="apply-form-submit">
-                        <input type="submit" id="formSubmit" class="clip" value="提交申请">
+                        <input type="submit" id="formSubmit" class="clip" value="申请">
 
                     </div>
                 </div>
