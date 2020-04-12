@@ -30,9 +30,7 @@
                     <input type="text" id="username" name="bookname" required="" lay-verify="required"
                            autocomplete="off" class="layui-input">
                 </div>
-                <div class="layui-form-mid layui-word-aux">
-                    <span class="x-red">*</span>将会成为您唯一的新书名
-                </div>
+                
             </div>
             <div class="layui-form-item">
                 <label for="phone" class="layui-form-label">
@@ -42,9 +40,7 @@
                     <input type="text" id="cover" name="cover" required="" lay-verify="phone"
                            autocomplete="off" class="layui-input">
                 </div>
-                <div class="layui-form-mid layui-word-aux">
-                    <span class="x-red">*</span>
-                </div>
+
             </div>
             <div class="layui-form-item">
                 <label for="L_email" class="layui-form-label">
@@ -54,9 +50,7 @@
                     <input type="text" id="L_email" name="label" required="" lay-verify="email"
                            autocomplete="off" class="layui-input">
                 </div>
-                <div class="layui-form-mid layui-word-aux">
-                    <span class="x-red">*</span>
-                </div>
+
             </div>
 
             <div class="layui-form-item">
@@ -67,9 +61,7 @@
                     <input type="text" id="L_pass" name="pass" required="" lay-verify="pass"
                            autocomplete="off" class="layui-input">
                 </div>
-                <div class="layui-form-mid layui-word-aux">
 
-                </div>
             </div>
 
 
