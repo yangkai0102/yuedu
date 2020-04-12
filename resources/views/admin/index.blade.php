@@ -79,7 +79,9 @@
                     <li>
                         <a onclick="xadmin.add_tab('作者审核','{{url('admin/examauthor')}}')">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>作者审核</cite></a>
+                            <cite>作者审核</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
+                        </a>
                     </li>
         </ul>
     </div>
