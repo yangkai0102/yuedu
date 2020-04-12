@@ -79,9 +79,9 @@
         请编写简介
     </script>
             <!-- 配置文件 -->
-            <script type="text/javascript" src="{{public_path('Tools/utf8-php/ueditor.config.js')}}"></script>
+            <script type="text/javascript" src="{{asset('Tools/utf8-php/ueditor.config.js')}}"></script>
             <!-- 编辑器源码文件 -->
-            <script type="text/javascript" src="{{public_path('Tools/utf8-php/ueditor.all.js')}}"></script>
+            <script type="text/javascript" src="{{asset('Tools/utf8-php/ueditor.all.js')}}"></script>
             <!-- 实例化编辑器 -->
 
             <div class="layui-form-item">
