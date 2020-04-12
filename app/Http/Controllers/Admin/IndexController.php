@@ -27,7 +27,7 @@ class IndexController extends Controller
             $id=request()->input('id');
             $res1=AuthorModel::where('username',$id)->update(['status'=>1]);
             $res2=UserModel::where('tel',$id)->update(['status'=>1]);
-            
+
             if($res1&&$res2){
                 return 1;
             }else{

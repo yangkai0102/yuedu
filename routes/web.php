@@ -50,6 +50,8 @@ Route::post('/index/yupiao/{id}','Index\IndexController@yuepiao');
 
 Route::get('/author/index','Home\AuthorController@index')->middleware('checkauthor');
 Route::get('/author/apply','Home\AuthorController@apply');
+Route::post('/author/doapply','Home\AuthorController@doapply');
+Route::get('/author/lists','Home\AuthorController@lists');
 
 Route::get('login',function (){
     return view('user.login');

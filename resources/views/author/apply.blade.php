@@ -14,7 +14,7 @@
             <div class="g-title-h2 mb24">
                 <h2 class="g-h2">申请成为作家</h2>
             </div>
-            <form id="applyForm" class="apply-form" action="{{url('/author_reg2')}}" method="post">
+            <form id="applyForm" class="apply-form" action="{{url('author/doapply')}}" method="post">
                 <!--             <div class="apply-form-item"><lable class="afi-title"><strong class="form-item-txt">基础信息</strong></lable></div> -->
                 <div class="apply-form-item">
                     <label class="afi-title" for="authorName">昵称</label>
