@@ -70,7 +70,7 @@
                             <td>
                                 <input type="checkbox" name="id" value="1"   lay-skin="primary">
                             </td>
-                            <td aid="{{$v['username']}}" id="aid">{{$v['id']}}</td>
+                            <td aid="{{$v['username']}}" id="aid">{{$v['nid']}}</td>
                             <td>{{$v['nickname']}}</td>
                             <td>{{$v['username']}}</td>
                             <td>{{$v['email']}}</td>

@@ -18,7 +18,7 @@
                 <!--             <div class="apply-form-item"><lable class="afi-title"><strong class="form-item-txt">基础信息</strong></lable></div> -->
                 <div class="apply-form-item">
                     <label class="afi-title" for="authorName">昵称</label>
-                    <input id="authorName" name="authorname" type="text" placeholder="请输入" class="ui-input">
+                    <input id="authorName" name="nickname" type="text" placeholder="请输入" class="ui-input">
                     <em class="icon-font input-vertified">&#xe90b;</em>
 
                 </div>
