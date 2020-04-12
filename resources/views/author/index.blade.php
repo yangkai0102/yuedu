@@ -109,7 +109,7 @@
         </div>
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
-                <iframe src='{{url('author/list')}}' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
+                <iframe src='{{url('author/lists')}}' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
             </div>
         </div>
         <div id="tab_show"></div>
