@@ -14,6 +14,8 @@ class IndexController extends Controller
         return view('admin.index');
     }
 
+
+
     //后台审核作者
     public function examauthor(){
         $data=AuthorModel::get()->toArray();
