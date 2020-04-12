@@ -47,7 +47,7 @@
                     <span class="x-red">*</span>标签
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="L_email" name="label" required="" lay-verify="email"
+                    <input type="text" id="L_email" name="label" required=""
                            class="layui-input">
                 </div>
 
@@ -58,7 +58,7 @@
                     <span class="x-red">*</span>封面
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="L_pass" name="pass" required="" lay-verify="pass"
+                    <input type="text" id="L_pass" name="pass" required="" 
                             class="layui-input">
                 </div>
 
