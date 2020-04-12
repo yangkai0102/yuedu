@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Login\UserModel;
 use Closure;
 
 class Author
@@ -15,6 +16,18 @@ class Author
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if($request->session()->has('user')){
+            $author=session('user');d'd'
+
+            $info=UserModel::where('tel',$author)->first()->toArray();
+            $status=$info['status'];
+            if($status==1){
+                return $next($request);
+            }else{
+                return redirect('author/apply');
+            }
+        }else{
+            return redirect('scan');
+        }
     }
 }

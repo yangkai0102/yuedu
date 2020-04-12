@@ -62,7 +62,9 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'checkuser'=>\App\Http\Middleware\LoginMiddleware::class,
-         ];
+        'checkauthor'=>\App\Http\Middleware\Author::class,
+
+    ];
 
     /**
      * The priority-sorted list of middleware.

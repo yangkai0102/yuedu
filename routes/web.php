@@ -48,7 +48,9 @@ Route::post('/index/yupiao/{id}','Index\IndexController@yuepiao');
 
 
 
-Route::get('/author/index','Home\AuthorController@index')->middleware('checkuser');
+Route::get('/author/index','Home\AuthorController@index')->middleware('checkauthor');
+Route::get('/author/apply','Home\AuthorController@apply');
+
 Route::get('login',function (){
     return view('user.login');
 });

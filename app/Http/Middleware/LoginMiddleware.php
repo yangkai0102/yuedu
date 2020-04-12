@@ -15,7 +15,7 @@ class LoginMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if($request->session()->has('users')){
+        if($request->session()->has('user')){
             return $next($request);
         }else{
             return redirect('scan');
