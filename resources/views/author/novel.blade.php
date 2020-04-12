@@ -17,6 +17,7 @@
                 <img src="{{$v['cover']}}" alt="" width="200px" height="300px">
                 <p>{{$v['bookname']}}</p>
             </div>
+            @endforeach
         @endif
 </body>
 </html>
