@@ -48,4 +48,21 @@ class AuthorController extends Controller
         $info=NovelsModel::where('authorid',$userid)->get();
         return view('author.novel',['novel'=>$info]);
     }
+
+    public function newbook(){
+        return view('author.new');
+    }
+
+    //创建新书
+    public function createbook(){
+        $data=request()->all();
+        $data['authorid']=session('authorid');
+
+        $res=NovelsModel::insert($data);
+        if($res){
+            return "发布成功";
+        }else{
+            return "发布失败";
+        }
+    }
 }

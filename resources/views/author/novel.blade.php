@@ -12,6 +12,11 @@
         您还没有作品
         @else
         您的作品
+        @foreach($novel as $v)
+            <div style="float: left">
+                <img src="{{$v['cover']}}" alt="" width="200px" height="300px">
+                <p>{{$v['bookname']}}</p>
+            </div>
         @endif
 </body>
 </html>

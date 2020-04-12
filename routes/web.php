@@ -52,6 +52,8 @@ Route::get('/author/index','Home\AuthorController@index')->middleware('checkauth
 Route::get('/author/apply','Home\AuthorController@apply');
 Route::post('/author/doapply','Home\AuthorController@doapply');
 Route::get('/author/lists','Home\AuthorController@lists');
+Route::get('/author/new','Home\AuthorController@newbook');
+Route::post('/author/createbook','Home\AuthorController@createbook');
 
 Route::get('login',function (){
     return view('user.login');
