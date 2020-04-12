@@ -27,7 +27,7 @@
                     <span class="x-red">*</span>新书名字
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="username" name="username" required="" lay-verify="required"
+                    <input type="text" id="username" name="bookname" required="" lay-verify="required"
                            autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-mid layui-word-aux">
@@ -39,7 +39,7 @@
                     <span class="x-red">*</span>分类
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="phone" name="phone" required="" lay-verify="phone"
+                    <input type="text" id="cover" name="cover" required="" lay-verify="phone"
                            autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-mid layui-word-aux">
@@ -51,7 +51,7 @@
                     <span class="x-red">*</span>标签
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="L_email" name="email" required="" lay-verify="email"
+                    <input type="text" id="L_email" name="label" required="" lay-verify="email"
                            autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-mid layui-word-aux">
@@ -64,7 +64,7 @@
                     <span class="x-red">*</span>封面
                 </label>
                 <div class="layui-input-inline">
-                    <input type="password" id="L_pass" name="pass" required="" lay-verify="pass"
+                    <input type="text" id="L_pass" name="pass" required="" lay-verify="pass"
                            autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-mid layui-word-aux">
