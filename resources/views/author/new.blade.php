@@ -28,17 +28,17 @@
                 </label>
                 <div class="layui-input-inline">
                     <input type="text" id="username" name="bookname" required="" lay-verify="required"
-                           autocomplete="off" class="layui-input">
+                            class="layui-input">
                 </div>
-                
+
             </div>
             <div class="layui-form-item">
                 <label for="phone" class="layui-form-label">
                     <span class="x-red">*</span>分类
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="cover" name="cover" required="" lay-verify="phone"
-                           autocomplete="off" class="layui-input">
+                    <input type="text" id="cover" name="cover" required=""
+                            class="layui-input">
                 </div>
 
             </div>
@@ -48,7 +48,7 @@
                 </label>
                 <div class="layui-input-inline">
                     <input type="text" id="L_email" name="label" required="" lay-verify="email"
-                           autocomplete="off" class="layui-input">
+                           class="layui-input">
                 </div>
 
             </div>
@@ -59,7 +59,7 @@
                 </label>
                 <div class="layui-input-inline">
                     <input type="text" id="L_pass" name="pass" required="" lay-verify="pass"
-                           autocomplete="off" class="layui-input">
+                            class="layui-input">
                 </div>
 
             </div>
